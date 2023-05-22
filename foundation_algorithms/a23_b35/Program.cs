@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Net.NetworkInformation;
 using System.Xml;
 
-namespace a24_a34;
+namespace a24_a34_c8;
 
 public class Program
 {
