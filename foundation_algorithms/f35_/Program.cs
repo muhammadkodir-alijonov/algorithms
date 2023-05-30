@@ -135,27 +135,116 @@ namespace f35_
             }
             Console.ReadLine();*/
 
-            int n = 10;
-            double x = 2.00000;
-            if (n == 0)
-                Console.WriteLine(1);
+            ////Pow
+            //int n = 10;
+            //double x = 2.00000;
+            //if (n == 0)
+            //    Console.WriteLine(1);
 
-            if (n < 0)
+            //if (n < 0)
+            //{
+            //    x = 1 / x;
+            //    n = -n;
+            //}
+
+            //double result = 1;
+            //while (n > 0)
+            //{
+            //    if (n % 2 == 1)
+            //        result *= x;
+
+            //    x *= x;
+            //    n /= 2;
+            //}
+            //Console.WriteLine(result);
+
+
+
+
+            ////Foydalanuvchi 5 ta son kitisin shu sonlar ichida 2-chi kattasini chiqazing;
+            //int[] numbers = new int[5];
+
+            //Console.WriteLine("Iltimos, 5 ta son kiriting:");
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.Write($"Son {i + 1}: ");
+            //    numbers[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int max2 = int.MinValue;
+            //int max1 = int.MinValue;
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    if (numbers[i] > max1)
+            //    {
+            //        max2 = max1;
+            //        max1 = numbers[i];
+            //    }
+            //    else if (numbers[i] > max2 && numbers[i] < max1)
+            //    {
+            //        max2 = numbers[i];
+            //    }
+            //}
+
+            //if (max2 != int.MinValue)
+            //{
+            //    Console.WriteLine($"2-chi katta son: {max2}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("2-chi katta son topilmadi.");
+            //}
+
+
+
+
+            // n ta son ichidan eng katta va eng kichigini topish:
+            //Console.Write("Sonlar nechta? ");
+            //int n = int.Parse(Console.ReadLine());
+
+            //int max = int.MinValue;
+            //int min = int.MaxValue;
+
+            //Console.WriteLine($"Iltimos, {n} ta sonni kiriting:");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write($"Son {i + 1}: ");
+            //    int number = int.Parse(Console.ReadLine());
+
+            //    if (number > max)
+            //    {
+            //        max = number;
+            //    }
+
+            //    if (number < min)
+            //    {
+            //        min = number;
+            //    }
+            //}
+
+            //Console.WriteLine($"Eng katta son: {max}");
+            //Console.WriteLine($"Eng kichik son: {min}");
+
+
+            /*char[] s = new char[] { 'h', 'e', 'l', 'l', 'o' };
+            char[] chars = new char[] { };
+            for (int i = s.Length; i <=0 ; i++)
             {
-                x = 1 / x;
-                n = -n;
-            }
 
-            double result = 1;
-            while (n > 0)
-            {
-                if (n % 2 == 1)
-                    result *= x;
+            }*/
 
-                x *= x;
-                n /= 2;
-            }
-            Console.WriteLine(result);
+
+            ////berilgan sonni teskarisiga chiqazish
+            //int[] s = new int[] { 1,2,3,4,5};
+            //int length = s.Length;
+            //for (int i = 0; i < length / 2; i++)
+            //{
+            //    int temp = s[i];
+            //    s[i] = s[length - 1 - i];
+            //    s[length - 1 - i] = temp;
+            //}
+            //Console.WriteLine(string.Join(",",s));
 
         }
     }
