@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        ////H13: Foydalanuvchi 10 ta son kiritadi.Shu sonlarning barchasiga 10 ni qo'shib
+        /*////H13: Foydalanuvchi 10 ta son kiritadi.Shu sonlarning barchasiga 10 ni qo'shib
         ////qo'ying va ekranga chiqaring. Array bilan ishlansin
         //int[] numbers = new int[10];
 
@@ -84,11 +84,7 @@ class Program
         //     sum2 += numbers[i];
         // int all_sum = sum1 - sum2;
         // Console.WriteLine(all_sum);
-        //}
-
-
-
-
+        //}*/
 
     }
 }

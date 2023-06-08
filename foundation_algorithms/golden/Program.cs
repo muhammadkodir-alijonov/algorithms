@@ -1,4 +1,4 @@
-﻿namespace golden
+﻿/*namespace golden
 {
     public class Program
     {
@@ -45,4 +45,25 @@
             return -1; // Target not found
         }
     }
-}
+}*/
+/*using System;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Natural sonni kiriting: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        int result = Factorial(n);
+
+        Console.WriteLine($"{n}! = {result}");
+    }
+
+    static int Factorial(int n)
+    {
+        if (n == 0)
+            return 1;
+        else
+            return n * Factorial(n - 1);
+    }
+}*/
