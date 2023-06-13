@@ -59,7 +59,7 @@ class Program
         Console.WriteLine($"{n}! = {result}");
     }
 
-    static int Factorial(int n)
+    static int Factorial(int n) o'zini o'zi chaqirayabdi
     {
         if (n == 0)
             return 1;

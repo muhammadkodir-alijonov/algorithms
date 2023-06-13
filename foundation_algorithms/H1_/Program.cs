@@ -15,6 +15,7 @@ class Program
         //    numbers[i] = Convert.ToInt32(Console.ReadLine());
         //}
 
+  
 
         //// Her bir sayıya 10 eklenmesi
         //for (int i = 0; i < 10; i++)
