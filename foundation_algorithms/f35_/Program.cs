@@ -58,7 +58,8 @@ namespace f35_
             //}
 
 
-            ////F42:Foydalanuvchi a va b sonlarini kiritadi.
+            ////Most difficult
+            ///F42:Foydalanuvchi a va b sonlarini kiritadi.
             ////Shu sonlarning kattasidan kichigacha bo'lgan sonlarni ekranga chiqaring
             //Console.WriteLine("Sonlarni kriting: ");
             //int a = int.Parse(Console.ReadLine());
