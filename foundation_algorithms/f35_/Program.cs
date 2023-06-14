@@ -100,7 +100,8 @@ namespace f35_
             //}
 
 
-            ////F44:Foydalanuvchi 2 ta natural son kiritadi. Bu sonlar to'rtburchakning eni
+            ////F44:
+            ///Foydalanuvchi 2 ta natural son kiritadi. Bu sonlar to'rtburchakning eni
             ////va bo'yi xisoblanadi. Shu to'rtburchakni ekranga chiqaring. Example rasmda berilgan
             //Console.WriteLine("Shakil tomonini kiriting: ");
             //int a = int.Parse(Console.ReadLine());
@@ -120,7 +121,8 @@ namespace f35_
 
 
 
-            /*//pattern
+            /*//
+             * pattern
             int n = 10;
             for (int i = 0; i <= n; i++)
             {
@@ -163,7 +165,8 @@ namespace f35_
 
 
 
-            ////Foydalanuvchi 5 ta son kitisin shu sonlar ichida 2-chi kattasini chiqazing;
+            ////
+            ///Foydalanuvchi 5 ta son kitisin shu sonlar ichida 2-chi kattasini chiqazing;
             //int[] numbers = new int[5];
 
             //Console.WriteLine("Iltimos, 5 ta son kiriting:");
