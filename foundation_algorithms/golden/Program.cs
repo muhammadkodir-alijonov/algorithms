@@ -1,4 +1,5 @@
-﻿/*namespace golden
+﻿/* binery search
+ * namespace golden
 {
     public class Program
     {
