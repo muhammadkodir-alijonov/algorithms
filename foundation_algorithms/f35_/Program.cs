@@ -81,7 +81,8 @@ namespace f35_
             //}
 
 
-            ////F43:Ekranga "O'yinni davom ettirasizmi: [h/y]" degan yozuv chiqsin.
+            ////much more difficult
+            ///F43:Ekranga "O'yinni davom ettirasizmi: [h/y]" degan yozuv chiqsin.
             ////Agar foydalanuvchi h ni bossa, xuddi avvalgi ish bajarilsin
             ////(yani avvalgi savolni yana ekranga chiqarib, jarayon takrorlansin).
             ////Agar Foydalanuvchi y ni bossa dastur tugatilsin
