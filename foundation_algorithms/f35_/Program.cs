@@ -165,6 +165,7 @@ namespace f35_
 
 
 
+
             ////
             ///Foydalanuvchi 5 ta son kitisin shu sonlar ichida 2-chi kattasini chiqazing;
             //int[] numbers = new int[5];
