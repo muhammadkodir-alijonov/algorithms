@@ -164,10 +164,10 @@ namespace f35_
 
 
 
-
+             
 
             ////
-            ///Foydalanuvchi 5 ta son kitisin shu sonlar ichida 2-chi kattasini chiqazing;
+            ///Foydalanubvnvchi 5 ta son kitisin shu sonlar ichida 2-chi kattasini chiqazing;
             //int[] numbers = new int[5];
 
             //Console.WriteLine("Iltimos, 5 ta son kiriting:");
