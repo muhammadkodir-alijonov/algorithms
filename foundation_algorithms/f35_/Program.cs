@@ -7,7 +7,7 @@ namespace f35_
     {
         static void Main(string[] args)
         {
-            ////F35: 29 dan 55 gacha bo'lgan sonlar ichidan 6 ga bo'linmaydiganlarini ekranga chiqaring.
+            //// F35: 29 dan 55 gacha bo'lgan sonlar ichidan 6 ga bo'linmaydiganlarini ekranga chiqaring.
             ////CONTINUE bilan ishlansin
             //Console.WriteLine("Sonlarni kriitng: ");
             ////int a = int.Parse(Console.ReadLine());
