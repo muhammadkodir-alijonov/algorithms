@@ -22,7 +22,7 @@ namespace f35_
 
 
 
-            ////F36:42 dan 77 gacha bo'lgan sonlar ichidan 3 ga ham 5 ham bo'linmaydiganlari
+            //// F36:42 dan 77 gacha bo'lgan sonlar ichidan 3 ga ham 5 ham bo'linmaydiganlari
             ////ekranga chiqarilsin.CONTINUE bilan ishlansin
             //for (int i = 42; i <=77; i++)
             //{
