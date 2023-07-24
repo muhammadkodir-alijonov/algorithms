@@ -68,22 +68,6 @@ public class Program
         if (a + b > c && b + c > a && c + a > b) Console.WriteLine("Uchburchak bo'la oladi.");
         else Console.WriteLine("Bunday uchburchak yo'q");*/
 
-
-        /*//B8:Foydalanuvchi secondlarni kiritadi.Siz esa uni to'liq necha minut bo'lishini ekranga chiqaring
-        Console.WriteLine("Sekundlarni kriting: ");
-        int secund = int.Parse(Console.ReadLine());
-        int toliq_minut = 0;
-        toliq_minut = secund / 60;
-        Console.WriteLine(toliq_minut);*/
-
-
-        /*//B9:Foydalanuvchi secondlarni kiritadi.Siz esa uni to'liq necha soat bo'lishini ekranga chiqaring
-        Console.WriteLine("Sekundlarni kriting: ");
-        int secund = int.Parse(Console.ReadLine());
-        int soat = 0;
-        soat = (secund / 60)/60;
-        Console.WriteLine(soat);*/
-
         /*//B11: Foydalanuvchi 3 xonali son kiritadi. Shu sonning raqamlari yig'indisini toping.
         Console.WriteLine("Son kriting: ");
         int son = int.Parse(Console.ReadLine());

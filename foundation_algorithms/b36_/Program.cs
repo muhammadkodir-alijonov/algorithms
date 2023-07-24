@@ -25,21 +25,6 @@ public class Program
             Console.WriteLine("Bu belgi harf emas");
         }*/
 
-
-        /*//d2: 20 dan 420 gacha bo'lgan sonlar ichida 5 ga bo'linadigan
-        //lekin 10 ga bo'linmaydigan sonlar ekranga chiqaring:
-        int son = 20;
-
-        while (son <= 420)
-        {
-            if (son % 5 == 0 && son % 10 != 0)
-            {
-                Console.WriteLine(son);
-            }
-            son++;
-        }*/
-
-
         /*//d?: n son kritilsin va shu n gacha bo'lgon sonlar kvadrati chiqazilsin:
         Console.WriteLine("Son kriitng:");
         int son = int.Parse(Console.ReadLine());
