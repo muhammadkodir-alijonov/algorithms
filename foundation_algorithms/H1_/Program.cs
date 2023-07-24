@@ -11,7 +11,7 @@ class Program
         //// Kullanıcıdan 10 adet sayı alınması
         //for (int i = 0; i < 10; i++)
         //{
-        //    Console.Write($"Sayı {i + 1}: ");
+        //    Console.Write($"Sayı {i + 10}: ");
         //    numbers[i] = Convert.ToInt32(Console.ReadLine());
         //}
 
