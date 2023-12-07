@@ -1,4 +1,4 @@
-﻿/*//using System;salom dunyo
+﻿/*//using System;
 //class MultiplicationTables
 //{
 //    static void Main(string[] args)
