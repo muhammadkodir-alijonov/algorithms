@@ -1,4 +1,4 @@
-﻿/*//using System;asdaddsfs
+﻿/*//using System;
 //class MultiplicationTables
 //{
 //    static void Main(string[] args)
