@@ -1,4 +1,4 @@
-﻿/*//using System;
+﻿/*//using System;salom dunyo
 
 //class MultiplicationTables
 //{
@@ -311,62 +311,3 @@ namespace ComparisionExample
         }
     }
 }*/
-
-
-using System;
-
-public class Person
-{
-    private string name;
-    private int age;
-
-    // Public constructor
-    public Person(string name, int age)
-    {
-        this.name = name;
-        this.age = age;
-    }
-
-    // Public method to display information
-    public void DisplayInfo()
-    {
-        Console.WriteLine($"Name: {name}, Age: {age}");
-    }
-
-    // Public method to update age (example of encapsulation)
-    public void UpdateAge(int newAge)
-    {
-        if (newAge > 0)
-        {
-            this.age = newAge;
-            Console.WriteLine("Age updated successfully.");
-        }
-        else
-        {
-            Console.WriteLine("Invalid age value.");
-        }
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        // Creating an instance of the Person class
-        Person person = new Person("John Doe", 25);
-
-        // Displaying initial information
-        Console.WriteLine("Initial Information:");
-        person.DisplayInfo();
-
-        // Trying to update age with an invalid value
-        person.UpdateAge(-5);
-
-        // Updating age with a valid value
-        person.UpdateAge(30);
-
-        // Displaying updated information
-        Console.WriteLine("Updated Information:");
-        person.DisplayInfo();
-    }
-}
