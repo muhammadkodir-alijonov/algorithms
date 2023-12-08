@@ -1,4 +1,4 @@
-﻿/*//using System;salom uka
+﻿/*//using System;
 
 //class MultiplicationTables
 //{
