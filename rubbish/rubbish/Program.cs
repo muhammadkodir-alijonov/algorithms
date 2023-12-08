@@ -1,4 +1,3 @@
-﻿/*//using System;
 //class MultiplicationTables
 //{
 //    static void Main(string[] args)
