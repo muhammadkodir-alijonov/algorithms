@@ -1,4 +1,4 @@
-/*//class MultiplicationTables //done
+/*//class MultiplicationTables //
 //{
 //    static void Main(string[] args)
 //    {
