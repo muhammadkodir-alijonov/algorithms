@@ -1,4 +1,4 @@
-/*//class MultiplicationTables //salom dunyo
+/*//class MultiplicationTables //
 //{
 //    static void Main(string[] args)
 //    {
