@@ -1,4 +1,4 @@
-﻿/*//using System;rty
+﻿/*//using System;
 
 //class MultiplicationTables
 //{
