@@ -1,5 +1,4 @@
-/*//using System;
-//class MultiplicationTables
+/*//class MultiplicationTables
 //{
 //    static void Main(string[] args)
 //    {
@@ -213,8 +212,7 @@ class GFG
 //    }
 //}
 
-/*
-using System;
+/*using System;
 namespace ComparisionExample
 {
     class Program

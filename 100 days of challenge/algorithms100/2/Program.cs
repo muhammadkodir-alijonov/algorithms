@@ -32,7 +32,7 @@
 //    {
 //        static void Main(string[] args)
 //        {
-//            //Creating a Collection using Array List
+//            //Creating a Collection using Array Listd
 //            ArrayList numberArray = new ArrayList();
 //            numberArray.Add(10);
 //            numberArray.Add(200);
