@@ -1,4 +1,4 @@
-/*//class MultiplicationTables //something 
+////class MultiplicationTables //something 
 //{
 //    static void Main(string[] args)
 //    {
@@ -25,6 +25,7 @@
 //    }
 //}
 
+/*
 using System;
 
 class MultiplicationTables
