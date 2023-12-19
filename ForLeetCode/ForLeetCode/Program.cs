@@ -4,9 +4,79 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        
     }
 }
+/*public class Solution //268
+{
+    public static int MissingNumber(int[] nums)
+    {
+        int n = nums.Length;
+        int sum = 0;
+        foreach (int num in nums)
+        {
+            sum += num;
+        }
+        return n * (n + 1) / 2 - sum;
+    }
+}*/
+
+/*public static class Solution //136
+{
+    public static int SingleNumber(int[] nums)
+    {
+        var list = new List<int>();
+        foreach (var item in nums)
+        {
+            if (list.Contains(item))
+            {
+                list.Remove(item);
+            }
+            else
+            {
+                list.Add(item);
+            }
+        }
+        return list.First();
+    }
+    public static int SingleNumber2(int[] nums)
+    {
+        int res = 0;
+        foreach (int x in nums)
+        {
+            res ^= x;
+        }
+        return res;
+    }
+}*/
+
+/*public class Solution //345
+{
+    public string ReverseVowels(string s)
+    {
+        var vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u' };
+        var chars = s.ToCharArray();
+        var i = 0;
+        var j = s.Length - 1;
+        while (i < j)
+        {
+            if (!vowels.Contains(char.ToLower(chars[i])))
+            {
+                i++;
+                continue;
+            }
+            if (!vowels.Contains(char.ToLower(chars[j])))
+            {
+                j--;
+                continue;
+            }
+            (chars[i], chars[j]) = (chars[j], chars[i]);
+            i++;
+            j--;
+        }
+        return new string(chars);
+    }
+}*/
 
 //public class Solution //344
 //{
