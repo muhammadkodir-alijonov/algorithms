@@ -1,12 +1,94 @@
-﻿namespace HelloWorld;
+﻿using System.Text;
+
+namespace HelloWorld;
 
 internal class Program
 {
     static void Main(string[] args)
     {
-        
+        Console.WriteLine(Solution.IsPalindrome("A man, a plan, a canal: Panama"));
     }
 }
+/*public class Solution //125
+{
+    public static bool IsPalindrome(string s)
+    {
+        var sb = new StringBuilder();
+        foreach (var c in s)
+        {
+            if (char.IsLetterOrDigit(c))
+            {
+                sb.Append(char.ToLower(c));
+            }
+        }
+        var left = 0;
+        var right = sb.Length - 1;
+        while (left < right)
+        {
+            if (sb[left] != sb[right])
+            {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+}*/
+
+/*public class Solution //263
+{
+    public static bool IsUgly(int n)
+    {
+        if (n <= 0)
+        {
+            return false;
+        }
+        while (n % 2 == 0)
+        {
+            n /= 2;
+        }
+        while (n % 3 == 0)
+        {
+            n /= 3;
+        }
+        while (n % 5 == 0)
+        {
+            n /= 5;
+        }
+        return n==1;
+    }
+}*/
+
+/*public class Solution //434
+{
+    //s = "Hello World, My name is Mukhammadkodir"
+    public static int CountSegments(string s)
+    {
+        //var count = 0;
+        //var flag = false;
+        //foreach (var c in s)
+        //{
+        //    if (c == ' ')
+        //    {
+        //        flag = false;
+        //    }
+        //    else if (!flag)
+        //    {
+        //        flag = true;
+        //        count++;
+        //    }
+        //}
+        //return count;
+        if (s == null || s.Length == 0)
+        {
+            return 0;
+        }
+        return s.Trim().Split(' ').Count();
+        //return s.Split(' ',StringSplitOptions.RemoveEmptyEntries).Length;
+    }
+}*/
+
 /*public class Solution //268
 {
     public static int MissingNumber(int[] nums)
