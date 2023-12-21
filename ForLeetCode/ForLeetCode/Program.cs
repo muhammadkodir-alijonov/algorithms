@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 
 namespace HelloWorld;
 
@@ -6,9 +7,34 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Solution.IsPalindrome("A man, a plan, a canal: Panama"));
+        Console.WriteLine(Solution.CapitalizeTitle("First leTTeR oF EACH Word"));
     }
+
 }
+
+
+/*public class Solution //2129
+{
+    public static string CapitalizeTitle(string title)
+    {
+        string[] words = title.Split(' ');
+
+        for (int i = 0; i < words.Length; i++)
+        {
+            if (words[i].Length <= 2)
+            {
+                words[i] = words[i].ToLower();
+            }
+            else
+            {
+                words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1).ToLower();
+            }
+        }
+
+        return string.Join(" ", words);
+    }
+}*/
+
 /*public class Solution //125
 {
     public static bool IsPalindrome(string s)
@@ -65,21 +91,21 @@ internal class Program
     //s = "Hello World, My name is Mukhammadkodir"
     public static int CountSegments(string s)
     {
-        //var count = 0;
-        //var flag = false;
-        //foreach (var c in s)
-        //{
-        //    if (c == ' ')
-        //    {
-        //        flag = false;
-        //    }
-        //    else if (!flag)
-        //    {
-        //        flag = true;
-        //        count++;
-        //    }
-        //}
-        //return count;
+        var count = 0;
+        var flag = false;
+        foreach (var c in s)
+        {
+            if (c == ' ')
+            {
+                flag = false;
+            }
+            else if (!flag)
+            {
+                flag = true;
+                count++;
+            }
+        }
+        return count;
         if (s == null || s.Length == 0)
         {
             return 0;
