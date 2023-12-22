@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Solution.CapitalizeTitle("First leTTeR oF EACH Word"));
+        //Console.WriteLine(Solution.CapitalizeTitle("First leTTeR oF EACH Word"));
     }
 
 }
