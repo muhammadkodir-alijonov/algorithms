@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Net.Sockets;
 using System.Text;
 
 namespace HelloWorld;
@@ -7,11 +8,92 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine(Solution.CapitalizeTitle("First leTTeR oF EACH Word"));
+        string[] strs = { "flower", "flow", "flight" };
+        Console.WriteLine(Solution.LongestCommonPrefix(strs));
     }
 
 }
+/*public class Solution //14
+{
+    public static string LongestCommonPrefix(string[] strs)
+    {
+        if (strs.Length == 0)
+        {
+            return "";
+        }
+        var prefix = strs[0];
+        for (var i = 1; i < strs.Length; i++)
+        {
+            while (strs[i].IndexOf(prefix) != 0)
+            {
+                prefix = prefix.Substring(0, prefix.Length - 1);
+                if (prefix == "")
+                {
+                    return "";
+                }
+            }
+        }
+        return prefix;
+    }
+}*/
 
+/*public class Solution //9
+{
+    public static bool IsPalindrome(int x)
+    {
+        if (x < 0)
+        {
+            return false;
+        }
+        var s = x.ToString();
+        var left = 0;
+        var right = s.Length - 1;
+        while (left < right)
+        {
+            if (s[left] != s[right])
+            {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+}*/
+
+/*public class Solution //520
+{
+    public static bool DetectCapitalUse(string word)
+    {
+        if (word.Length == 1)
+        {
+            return true;
+        }
+        var first = word[0];
+        var second = word[1];
+        if (char.IsUpper(first) && char.IsUpper(second))
+        {
+            for (var i = 2; i < word.Length; i++)
+            {
+                if (char.IsLower(word[i]))
+                {
+                    return false;
+                }
+            }
+        }
+        else
+        {
+            for (var i = 1; i < word.Length; i++)
+            {
+                if (char.IsUpper(word[i]))
+                {
+                    return false;
+                }
+            }
+        }
+        return true; //main idea
+    }
+}*/
 
 /*public class Solution //2129
 {
