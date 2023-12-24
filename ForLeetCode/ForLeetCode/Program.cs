@@ -12,6 +12,13 @@ internal class Program
     }
 
 }
+public class Solution //171
+{
+    public int TitleToNumber(string columnTitle)
+    {
+
+    }
+}
 /*public class Solution //13
 {
     public static int RomanToInt(string s)
