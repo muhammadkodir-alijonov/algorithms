@@ -8,10 +8,32 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Solution.Generate(5));
+        Console.WriteLine(Solution.RomanToInt(5));
     }
 
 }
+/*public class Solution //13
+{
+    public static int RomanToInt(string s)
+    {
+        Dictionary<char, int> romanIntegerMap = new Dictionary<char, int>() { { 'I', 1 }, { 'V', 5 }, { 'X', 10 }, { 'L', 50 }, { 'C', 100 }, { 'D', 500 }, { 'M', 1000 } };
+        var resalt = 0;
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (romanIntegerMap[s[i]] < romanIntegerMap[s[i + 1]])
+            {
+                resalt -= romanIntegerMap[s[i]];
+            }
+            else
+            {
+                resalt += romanIntegerMap[s[i]];
+            }
+        }
+        resalt += romanIntegerMap[s.Last()];
+        return resalt;
+    }
+}*/
+
 /*public class Solution //118
 {
     public static IList<IList<int>> Generate(int numRows)
