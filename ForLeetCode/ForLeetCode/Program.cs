@@ -8,11 +8,35 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        string[] strs = { "flower", "flow", "flight" };
-        Console.WriteLine(Solution.LongestCommonPrefix(strs));
+        Console.WriteLine(Solution.Generate(5));
     }
 
 }
+/*public class Solution //118
+{
+    public static IList<IList<int>> Generate(int numRows)
+    {
+        var list = new List<IList<int>>();
+        for (var i = 0; i < numRows; i++)
+        {
+            var row = new List<int>();
+            for (var j = 0; j <= i; j++)
+            {
+                if (j == 0 || j == i)
+                {
+                    row.Add(1);
+                }
+                else
+                {
+                    row.Add(list[i - 1][j - 1] + list[i - 1][j]);
+                }
+            }
+            list.Add(row);
+        }
+        return list;
+    }
+}*/
+
 /*public class Solution //14
 {
     public static string LongestCommonPrefix(string[] strs)
