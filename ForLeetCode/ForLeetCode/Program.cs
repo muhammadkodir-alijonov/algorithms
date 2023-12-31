@@ -8,15 +8,21 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Solution.RomanToInt(5));
+        Console.WriteLine(Solution.TitleToNumber("AA"));
     }
 
 }
 public class Solution //171
 {
-    public int TitleToNumber(string columnTitle)
+    public static int TitleToNumber(string columnTitle)
     {
-
+        var columnNumber = 0;
+        for (int i = 0; i < columnTitle.Length; i++)
+        {
+            columnNumber *= 26;
+            columnNumber += columnTitle[i] - 'A' + 1;
+        }
+        return columnNumber;
     }
 }
 /*public class Solution //13
