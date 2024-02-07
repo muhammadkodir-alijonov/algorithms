@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using System.Net.Sockets;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace HelloWorld;
@@ -8,11 +9,68 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Solution.TitleToNumber("AA"));
+        int[] arr = { 2, 7, 11, 15 };
+        Console.WriteLine(MaxProduct(arr));
     }
-
+    static int MaxProduct(int[] nums)
+    {
+        Array.Sort(nums);
+        return (nums[nums.Length - 1] - 1) * (nums[nums.Length - 2] - 1);
+    }
 }
-public class Solution //171
+/*public class Solution //41
+{
+    public int FirstMissingPositive(int[] nums)
+    {
+        if (nums.Length == 1 && nums[0] == 1) return 2;
+        else if (nums.Length == 1 && nums[0] != 1) return 1;
+
+        Array.Sort(nums);
+        int i = 0;
+        int lowest = int.MaxValue;
+        for (; i < nums.Length - 1; i++)
+        {
+            // ignore negative numbers
+            if (nums[i] < 0) continue;
+
+            // save lowest number
+            if (nums[i] < lowest) lowest = nums[i];
+
+            // checks for if the numbers are one after the other
+            if (nums[i] + 1 == nums[i + 1] || nums[i] == nums[i + 1]) continue;
+
+            // if they aren't return based on the lowest number
+            return lowest == 1 || lowest + 1 == 1 ? nums[i] + 1 : 1;
+        }
+
+        // return based on the lowest number if nothing 
+        // was returned during the loop
+        return lowest == 1 || lowest + 1 == 1 || nums[i] == 1 ? nums[i] + 1 : 1;
+    }
+}*/
+/*public class Solution //41
+{
+    public int FirstMissingPositive(int[] nums)
+    {
+        int n = nums.Length;
+        for (int i = 0; i < n; i++)
+        {
+            while (nums[i] > 0 && nums[i] <= n && nums[nums[i] - 1] != nums[i])
+            {
+                (nums[i], nums[nums[i] - 1]) = (nums[nums[i] - 1], nums[i]);
+            }
+        }
+        for (int i = 0; i < n; i++)
+        {
+            if (nums[i] != i + 1)
+            {
+                return i + 1;
+            }
+        }
+        return n + 1;
+    }
+}*/
+/*public class Solution //171
 {
     public static int TitleToNumber(string columnTitle)
     {
@@ -24,7 +82,7 @@ public class Solution //171
         }
         return columnNumber;
     }
-}
+}*/
 /*public class Solution //13
 {
     public static int RomanToInt(string s)
@@ -416,5 +474,34 @@ public class Solution //171
             b = b == null ? headA : b.next;
         }
         return a;
+    }
+}*/
+/*public class Solution 1046
+{
+    public int LastStoneWeight(int[] stones)
+    {
+        Array.Sort(stones);
+        for (int i = 0; i < stones.Length; i++)
+        {
+            if (stones[i] == stones[i + 1])
+            {
+                stones[i] = 0;
+                stones[i + 1] = 0;
+            }
+            else
+            {
+                stones[i] = stones[i + 1] - stones[i];
+                stones[i + 1] = 0;
+            }
+        }
+        return stones[stones.Length - 1];
+    }
+}*/
+/*public class Solution //1464
+{
+    public int MaxProduct(int[] nums)
+    {
+        Array.Sort(nums);
+        return (nums[nums.Length - 1] - 1) * (nums[nums.Length - 2] - 1);
     }
 }*/
