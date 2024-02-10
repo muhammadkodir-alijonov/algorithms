@@ -9,13 +9,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int[] arr = { 2, 7, 11, 15 };
-        Console.WriteLine(MaxProduct(arr));
-    }
-    static int MaxProduct(int[] nums)
-    {
-        Array.Sort(nums);
-        return (nums[nums.Length - 1] - 1) * (nums[nums.Length - 2] - 1);
+        string s = "[{}]";
+        Console.WriteLine(IsValid(s));
     }
 }
 /*public class Solution //41
@@ -503,5 +498,36 @@ internal class Program
     {
         Array.Sort(nums);
         return (nums[nums.Length - 1] - 1) * (nums[nums.Length - 2] - 1);
+    }
+}*/
+/*public class Solution //20
+{
+    public bool IsValid(string s)
+    {
+        var StackChars = new Stack<char>();
+        foreach (var item in s)
+        {
+            if (item == '(' || item == '{' || item == '[')
+            {
+                StackChars.Push(item);
+            }
+            else if (item == ')' && StackChars.Count != 0 && StackChars.Peek() == '(')
+            {
+                StackChars.Pop();
+            }
+            else if (item == '}' && StackChars.Count != 0 && StackChars.Peek() == '{')
+            {
+                StackChars.Pop();
+            }
+            else if (item == ']' && StackChars.Count != 0 && StackChars.Peek() == '[')
+            {
+                StackChars.Pop();
+            }
+            else
+            {
+                return false;
+            }
+        }
+        return StackChars.Count == 0;
     }
 }*/
