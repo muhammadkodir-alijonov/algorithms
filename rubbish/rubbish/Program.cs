@@ -6,6 +6,7 @@ namespace rubbish
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Salom");
         }
     }
 }
