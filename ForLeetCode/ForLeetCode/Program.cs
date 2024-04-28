@@ -4,7 +4,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace HelloWorld;
-
+//change the class name to Solution
 internal class Program
 {
     static void Main(string[] args)

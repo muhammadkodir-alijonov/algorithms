@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rubbish", "rubbish\rubbish.csproj", "{BF53AD1D-84A5-4903-AE35-2D489E3455CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF53AD1D-84A5-4903-AE35-2D489E3455CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF53AD1D-84A5-4903-AE35-2D489E3455CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF53AD1D-84A5-4903-AE35-2D489E3455CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF53AD1D-84A5-4903-AE35-2D489E3455CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A1D740F-1B71-4110-91C5-3B857D058ED5}
+	EndGlobalSection
+EndGlobal
