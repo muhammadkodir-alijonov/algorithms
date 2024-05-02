@@ -1,0 +1,521 @@
+[33mcommit 10cdf7265ac02784378d1ac17b6b15cf33ad809a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Sat Feb 10 15:46:10 2024 +0500
+
+    20
+
+[33mcommit 0533b38510b35f580e8d869b9e2c21a63a88c689[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Wed Feb 7 16:25:01 2024 +0500
+
+    160. 1464
+
+[33mcommit f992315a609dd380442fb3ac79f99c9aed52b365[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Sat Feb 3 15:40:11 2024 +0500
+
+    160
+
+[33mcommit d7c5271d58c319cc93fe82d403b84d2cfce52c0e[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Tue Jan 23 12:39:03 2024 +0500
+
+    add
+
+[33mcommit 621da125ccd08bc8826396b9889df51a461a7628[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Tue Jan 23 12:35:55 2024 +0500
+
+    Update README.md
+
+[33mcommit 5407ebfa5972a3a68cfba7965cd4fddda4971bf8[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Sun Dec 31 21:18:31 2023 +0500
+
+    171
+
+[33mcommit 9ee11e7212db7e1319a5d74f63538ec4defc9c2b[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Sun Dec 24 22:11:00 2023 +0500
+
+    13
+
+[33mcommit ea5bf37ff68b34ab42dc0ed889e5164d369b1cf1[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Sun Dec 24 20:45:10 2023 +0500
+
+    13
+
+[33mcommit 6581a1028a76ed08fa15287c54a747c48e75331b[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Sun Dec 24 20:02:00 2023 +0500
+
+    118
+
+[33mcommit ab5ae572503509fc66a2d0581aa1e4183aa362b0[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Sun Dec 24 00:20:35 2023 +0500
+
+    14,9
+
+[33mcommit 8f93426c52941096dcae6339624a276181ef7c5b[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Fri Dec 22 23:45:04 2023 +0500
+
+    edit
+
+[33mcommit e6fa02f40cc1d2fc55025fc2225d8030325e2e33[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Fri Dec 22 00:17:38 2023 +0500
+
+    2129
+
+[33mcommit ce1fedb605ddf3ae3160a3acd27b70ea9e3bcf85[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Wed Dec 20 23:28:22 2023 +0500
+
+    125,263,434 added
+
+[33mcommit 0c742ac792a9c730417ed590762f538d068346df[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Tue Dec 19 15:37:51 2023 +0500
+
+    136, 268 added
+
+[33mcommit aba6828dbbead52643236e3085ac3483466eaca1[m
+Author: Muhammadqodir Alijonov <alijonov0608@gmail.com>
+Date:   Sun Dec 17 00:59:46 2023 +0500
+
+    412,344
+
+[33mcommit 4baacf1731c1ba3fc3174ee8fe9c16f7a294d353[m
+Author: mukhammadkodir-alijonov <alijonov0608@gmail.com>
+Date:   Fri Dec 8 16:44:49 2023 +0500
+
+    remove smth
+
+[33mcommit 6654ca3be0cec7cff336827d1945bfb5dcf6392a[m
+Author: mukhammadkodir-alijonov <alijonov0608@gmail.com>
+Date:   Fri Dec 8 16:43:43 2023 +0500
+
+    remove
+
+[33mcommit af8428a426e9c83ebb6a4ee68432c2726aab055b[m
+Author: mukhammadkodir-alijonov <alijonov0608@gmail.com>
+Date:   Fri Dec 8 15:40:40 2023 +0500
+
+    done
+
+[33mcommit 07c3091038d2d4ee9fb2424d10f445716c781109[m
+Author: mukhammadkodir-alijonov <alijonov0608@gmail.com>
+Date:   Fri Dec 8 15:39:55 2023 +0500
+
+    1
+
+[33mcommit d876339875ae507a8cb3adac309fcae97dc0b759[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 15:23:35 2023 +0500
+
+    1
+
+[33mcommit 6369eedd11c000ded2cd9b80c8e8171f0e7b041b[m
+Merge: 2e49e16 0f9a0fc
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 15:17:51 2023 +0500
+
+    Merge branch 'main' of https://github.com/mukhammadkodir-alijonov/algorithms
+
+[33mcommit 2e49e1614e4ec04a62f88566ea820f38e9b47eb6[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 15:17:45 2023 +0500
+
+    `
+
+[33mcommit 0f9a0fcc427946c039c9ced1ce70b2eb4c485ac4[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Fri Dec 8 15:12:05 2023 +0500
+
+    Update README.md
+
+[33mcommit e9296847e69b7d178eb849fa08fadff6d69bd9aa[m
+Merge: c22e8b9 fc34757
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 15:01:20 2023 +0500
+
+    1
+
+[33mcommit c22e8b95986d318d12fb9f2eca7e33094ce872be[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 14:59:02 2023 +0500
+
+    1
+
+[33mcommit d3690cfb3561b1d8fbe8735b944c840509c68eca[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 14:58:24 2023 +0500
+
+    1
+
+[33mcommit fc34757c1741befa5235b99c2761128488960bfc[m
+Merge: f679529 cee83f7
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Fri Dec 8 14:57:47 2023 +0500
+
+    Merge pull request #2 from mukhammadkodir-alijonov/dev
+    
+    Dev
+
+[33mcommit cee83f726f50afe83bc3485c043fda6ca7184875[m[33m ([m[1;31morigin/dev[m[33m)[m
+Merge: c35d30d f679529
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Fri Dec 8 14:57:38 2023 +0500
+
+    Merge branch 'main' into dev
+
+[33mcommit c35d30d077af5f60696855bdb26bc9a17582cffe[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 14:56:10 2023 +0500
+
+    1
+
+[33mcommit 34188d6c80f2387f8770e1a8463a9e0f28e81a1e[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 14:33:40 2023 +0500
+
+    1
+
+[33mcommit f679529abd066fcdbda30a8c55844035952d22ed[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 12:01:41 2023 +0500
+
+    1
+
+[33mcommit dc946fc74507a0c14f17cb4190f3f64e0256de8b[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 11:59:31 2023 +0500
+
+    1
+
+[33mcommit b3b7cb027f0ee89b5929a216d5d55a99710297c9[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 11:58:40 2023 +0500
+
+    1
+
+[33mcommit 061d033237239fd9733eff4a4af805c92d0992f5[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 11:43:34 2023 +0500
+
+    1
+
+[33mcommit b48140d720c450bdded7dcf87770419706349246[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 02:23:23 2023 +0500
+
+    1
+
+[33mcommit ea6bee3cd51801da56b6a1d992e17a360f0e4873[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 02:19:11 2023 +0500
+
+    1
+
+[33mcommit 9b0d81f4e191653ff124b26d8ca1ac0c477c270f[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 02:12:11 2023 +0500
+
+    remove something
+
+[33mcommit 581ecbc4039afb6be04cbcb33fbf987db06a43fd[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 02:06:48 2023 +0500
+
+    1
+
+[33mcommit 84a3e800233fe7b461701a99002686f678cb7782[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 02:01:20 2023 +0500
+
+    1
+
+[33mcommit fdf5c1fae8d3baad434d84cf643980244b1ca901[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 01:59:25 2023 +0500
+
+    1
+
+[33mcommit 1425d4ff3aee673d0664c336bfd26593d9d0eb09[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 01:40:57 2023 +0500
+
+    1
+
+[33mcommit 0230959177efadaf5e54225ca98c094c02ae3f81[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 01:30:42 2023 +0500
+
+    clear
+
+[33mcommit c5547a0f844b6674cbf9ec30ff359a76bd28ef92[m
+Merge: 235a5ef d5b55f8
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Fri Dec 8 01:27:54 2023 +0500
+
+    Merge pull request #1 from mukhammadkodir-alijonov/dev
+    
+    added
+
+[33mcommit d5b55f8e92797909cf076e947bb0435e393f2968[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 01:27:11 2023 +0500
+
+    added
+
+[33mcommit 235a5ef32669f7ce967d13afe9f01b7bc8d15509[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 01:23:12 2023 +0500
+
+    added
+
+[33mcommit bb41b4a994e4beed979efbe0fb0fde5485e553d3[m
+Merge: f7ac714 ec145bf
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 01:17:25 2023 +0500
+
+    Merge branch 'main' of https://github.com/mukhammadkodir-alijonov/algorithms
+
+[33mcommit f7ac714148ca7cb51f300379cae1a36e7b21a7b1[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Dec 8 01:17:19 2023 +0500
+
+    changed
+
+[33mcommit ec145bf3d0ad7b3ce93a6c05dd1fcb3c2e3fd3c7[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Thu Nov 30 23:34:56 2023 +0500
+
+    asdas
+
+[33mcommit 1709f33b5b260f265e2966a2d5616f87b890af75[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Thu Nov 30 23:12:17 2023 +0500
+
+    added
+
+[33mcommit 2ab035943351dbf619ae0d73e70b60f0a0dda78c[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Sat Nov 18 15:13:15 2023 +0500
+
+    1
+
+[33mcommit b6840d4f75be078ed117bdb27b7ae10adde2eb97[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Mon Oct 16 15:13:05 2023 +0500
+
+    deleted
+
+[33mcommit c2b93c1dad5d35daaf77989bd2096e460da3e99c[m
+Merge: 2c3e47f 727a293
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Mon Oct 16 15:11:46 2023 +0500
+
+    Merge branch 'main' of https://github.com/mukhammadkodir-alijonov/algorithms
+
+[33mcommit 2c3e47f7f5e004e800aad6e8c4ffd069db75a9ab[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Mon Oct 16 15:11:20 2023 +0500
+
+    changed
+
+[33mcommit 727a293330787c8044405f23561758755d336b2f[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Thu Aug 17 14:00:13 2023 +0500
+
+    Update Program.cs
+
+[33mcommit 54db167413cbfb95c1308dfdc7f40547c2bb6e24[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Tue Aug 15 23:37:33 2023 +0500
+
+    Update Program.cs
+
+[33mcommit dee2154cd9581169cba960616492a54fe91f988f[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Tue Aug 15 23:37:14 2023 +0500
+
+    Update Program.cs
+
+[33mcommit 24462897592ce1e2e73be184b51a7d3d7cc70fdd[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Sat Aug 12 22:44:06 2023 +0500
+
+    Update Program.cs
+
+[33mcommit 64ead999e5dfec0b21668b80c9ece8e7702243ec[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Sat Aug 12 22:38:31 2023 +0500
+
+    day 2 is done
+
+[33mcommit c2a832918e7b2be853d1d8be9f8596fb51c5f8d8[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Aug 11 21:06:40 2023 +0500
+
+    added one solution
+
+[33mcommit 359b4c2956f593a404b5dbe491a9e25cf3c5a1d6[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Aug 11 20:48:14 2023 +0500
+
+    day 1 finished
+
+[33mcommit 34c5aaa00073c75e48d75e247171a6a01a889b37[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Fri Aug 11 19:34:49 2023 +0500
+
+    Update README.md
+
+[33mcommit 00219bda38f2a97fe3b94b4be94884bce46299f9[m
+Merge: eb3a327 6687f48
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Mon Jul 24 22:20:47 2023 +0500
+
+    Merge branch 'main' of https://github.com/mukhammadqodir-alijonov/algorithms
+
+[33mcommit eb3a327554ddacbd56a3a078b6bd84485c01d2dc[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Mon Jul 24 22:20:43 2023 +0500
+
+    updated
+
+[33mcommit 6687f4830785d7d45794aab60cfa68eb280fb872[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Thu Jul 6 23:34:40 2023 +0500
+
+    Update README.md
+
+[33mcommit 2d1b80dd709af75345c666a10e6d74e48e25c83f[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Thu Jul 6 15:02:40 2023 +0500
+
+    Update Program.cs
+
+[33mcommit 1fc974b5af99a99323443bab004a8445efb79c9c[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Thu Jul 6 15:02:03 2023 +0500
+
+    Update Program.cs
+
+[33mcommit 09f31a62208ec6d52d0dcaf9a60acdb9b02a1210[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Thu Jul 6 15:01:37 2023 +0500
+
+    Update Program.cs
+
+[33mcommit 20060740ff4fc67ad6497e1db5b10d5d11e7f9e8[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Tue Jul 4 19:27:36 2023 +0500
+
+    Update Program.cs
+
+[33mcommit 98d9a32c082d4bfdb67f92cbadde73cd4d1803d4[m
+Author: mukhammadkodir <98277057+mukhammadkodir-alijonov@users.noreply.github.com>
+Date:   Tue Jul 4 19:27:25 2023 +0500
+
+    Update Program.cs
+
+[33mcommit 9a1d6f0502aff4ba8874bcb84f53674f9e7be71c[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed Jun 21 23:10:47 2023 +0500
+
+    changed
+
+[33mcommit 4ce74f403b11d0e33dddc6b1d50821e74678ca65[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed Jun 21 23:10:32 2023 +0500
+
+    changed
+
+[33mcommit e54efbbe3878303eb5227736aa3e23dd21d35629[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed Jun 14 19:34:11 2023 +0500
+
+    changed
+
+[33mcommit 9517ca9e0cdadb38339d349c3508796b0c2c3804[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed Jun 14 19:30:08 2023 +0500
+
+    chnaged
+
+[33mcommit 98bd43452ce3f486e4f5523d3968de2153ea9df8[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed Jun 14 19:29:47 2023 +0500
+
+    changed
+
+[33mcommit 458245670104eef2f6c48db877e13268dbc90b4f[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed Jun 14 19:29:15 2023 +0500
+
+    changed
+
+[33mcommit bd9849c54299eb46ce10f615bea2f1b0e48c8254[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Tue Jun 13 23:26:36 2023 +0500
+
+    changed
+
+[33mcommit 54b314259cc657b53a4aed416de7113465a9054f[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Sat Jun 10 11:19:54 2023 +0500
+
+    changed
+
+[33mcommit 892ce3dd671575845f390c37c9c08a248e94e61e[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Thu Jun 8 14:30:24 2023 +0500
+
+    all
+
+[33mcommit 923ec6792cdde6bc1db59560d3d1d6a169a8bfe5[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Fri Jun 2 23:55:12 2023 +0500
+
+    0
+
+[33mcommit c1f6dc2a7c6825d7615cc8d51d6d5ff540d9a0d6[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed May 31 09:29:35 2023 +0500
+
+    1done
+
+[33mcommit 88ce2ec755e2f8be9d4e71cebca62c47ecdc00a3[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed May 31 00:28:00 2023 +0500
+
+    done
+
+[33mcommit a0517fc39573a5efb3a11a69f886c61064f887cd[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Wed May 24 14:07:30 2023 +0500
+
+    done
+
+[33mcommit f036bf45d5baad16d770bf126201eb7a85f36039[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Mon May 22 19:06:29 2023 +0500
+
+    f33
+
+[33mcommit 399f1620ba98face5472243c9f55578861baa484[m
+Author: mukhammadqodir-alijonov <mukhammadqodir-alijonov.alijonov0608@gmail.com>
+Date:   Thu May 18 15:13:20 2023 +0500
+
+    a23:b35 is added
+
+[33mcommit 0c493b34bdd756e9a73325a3b5ca6d149a97c96c[m
+Author: mukhammadqodir <98277057+mukhammadqodir-alijonov@users.noreply.github.com>
+Date:   Thu May 18 15:11:05 2023 +0500
+
+    Initial commit
