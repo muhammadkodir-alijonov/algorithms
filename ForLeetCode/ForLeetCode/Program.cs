@@ -9,8 +9,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        string s = "[{}]";
-        Console.WriteLine(IsValid(s));
+
     }
 }
 /*public class Solution //41

@@ -1,3 +1,5 @@
+#three sum closest
+nums = [-1, 2, 1, -4]
 def threesumclosest(nums, target):
     nums.sort()
     closest = float('inf')
@@ -14,3 +16,4 @@ def threesumclosest(nums, target):
             else:
                 r -= 1
     return closest
+print(threesumclosest(nums, 1))
