@@ -1,24 +1,17 @@
-#leetcode 20
+#leetocde 905. Sort Array By Parity
 class Solution(object):
-    def isValid(self, s):
+    def sortArrayByParity(self, nums):
         """
-        :type s: str
-        :rtype: bool
+        :type nums: List[int]
+        :rtype: List[int]
         """
-        stack = []
-        for i in s:
-            if i == '(' or i == '[' or i == '{':
-                stack.append(i)
+        left = 0
+        right = len(nums) - 1
+        while(left<right):
+            if nums[left] % 2 == 0:
+                left += 1
             else:
-                if not stack:
-                    return False
-                if i == ')' and stack[-1] != '(':
-                    return False
-                if i == ']' and stack[-1] != '[':
-                    return False
-                if i == '}' and stack[-1] != '{':
-                    return False
-                stack.pop()
-        return not stack
-    
-print(Solution().isValid("([])"))
+                nums[left], nums[right] = nums[right], nums[left]
+                right -= 1
+        return nums
+print(Solution().sortArrayByParity([3,1,2,4]))
