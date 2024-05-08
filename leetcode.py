@@ -1,17 +1,27 @@
-#leetocde 905. Sort Array By Parity
+#leetcode 2087 Minimum Cost Homecoming of a Robot in a Grid
 class Solution(object):
-    def sortArrayByParity(self, nums):
+    def minCost(self, startPos, homePos, rowCosts, colCosts):
         """
-        :type nums: List[int]
-        :rtype: List[int]
+        :type startPos: List[int]
+        :type homePos: List[int]
+        :type rowCosts: List[int]
+        :type colCosts: List[int]
+        :rtype: int
         """
-        left = 0
-        right = len(nums) - 1
-        while(left<right):
-            if nums[left] % 2 == 0:
-                left += 1
-            else:
-                nums[left], nums[right] = nums[right], nums[left]
-                right -= 1
-        return nums
-print(Solution().sortArrayByParity([3,1,2,4]))
+        res = 0
+        if(startPos[0]<=homePos[0]):
+            for i in range(startPos[0]+1,homePos[0]):
+                res += rowCosts[i]
+        else:
+            for i in range(homePos[0],startPos[0]-1):
+                res += rowCosts[i]
+
+        if(startPos[1]<=homePos[1]):
+            for i in range(homePos[0],startPos[0]+1):
+                res += colCosts[i]
+        else:
+            for i in range(startPos[0]-1,homePos[0]):
+                res += colCosts[i]
+        return res
+
+        
