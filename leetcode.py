@@ -1,14 +1,13 @@
 
 
-def valid_brackets(s: str) -> bool:
-    stack = []
-    bracka = {")": "(", "]": "[", "}": "{"}
-    for char in s:
-        if char not in bracka:
-            stack.append(char)
-        elif not stack or bracka[char] != stack.pop():
-            return False
-    return not stack
+def sortArrayByParity(nums):
+    even = []
+    odd = []
+    for i in nums:
+        if i % 2 == 0:
+            even.append(i)
+        else:
+            odd.append(i)
+    return even + odd
 
-
-print(valid_brackets("(]"))
+print(sortArrayByParity([3,1,2,4]))
