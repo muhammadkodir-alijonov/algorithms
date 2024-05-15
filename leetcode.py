@@ -1,8 +1,11 @@
+def is_palendrome(word: str):
+    left, right = 0, len(word) - 1
+    while left < right:
+        if word[left] != word[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
 
-def sum_recursion(nums: list[int], index = 0) -> int:
-    if index == len(nums):
-        return 0
-    return nums[index] + sum_recursion(nums, index + 1)
 
-
-print(sum_recursion([1, 2, 3]))
+print(is_palendrome("racecar"))
