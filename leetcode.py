@@ -1,15 +1,23 @@
+from collections import deque
 
-# Bo'sh array yaratamiz
-my_array = []
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
 
-# Foydalanuvchi tomonidan sonlar kiritish
-n = int(input("Qiymatlar sonini kiriting: "))
-for i in range(n):
-    element = int(input(f"{i+1}-chi qiymatni kiriting: "))
-    my_array.append(element)
+def is_leaf(node):
+    return not node.left and not node.right
 
-# Teskari tartibda chiqarish
-print("Teskarida chiqarilgan qiymatlar:")
-for i in range(len(my_array) - 1, -1, -1):
-    print(my_array[i])
-
+def count_leaves(root: TreeNode) -> int:
+    total = 0
+    queue = deque([root])
+    while queue:
+        curr = queue.pop()
+        if not curr:
+            continue
+        if is_leaf(curr):
+            total += 1
+        queue.appendleft(curr.left)
+        queue.appendleft(curr.right)
+    return total
