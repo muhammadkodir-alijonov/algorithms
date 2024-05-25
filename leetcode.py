@@ -1,19 +1,8 @@
 from typing import List
 
 class Solution:
-    def evalRPN(self, tokens: List[str]) -> int:
-        stack = []
-        for token in tokens:
-            if token in '+-*/':
-                b, a = stack.pop(), stack.pop()
-                if token == '+':
-                    stack.append(a + b)
-                elif token == '-':
-                    stack.append(a - b)
-                elif token == '*':
-                    stack.append(a * b)
-                else:
-                    stack.append(int(a / b))
-            else:
-                stack.append(int(token))
-        return stack[0]
+    def kidsWithCandies(candies: List[int], extraCandies: int) -> List[bool]:
+        max_candies = max(candies)
+        return [candy + extraCandies >= max_candies for candy in candies]
+    
+print(Solution.kidsWithCandies([2,3,5,1,3],3))
