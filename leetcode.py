@@ -1,14 +1,13 @@
-from typing import List
-
-
 class Solution:
-    def increasingTriplet(self, nums: List[int]) -> bool:
-        small = medium = int('inf')
-        for num in nums:
-            if num <= small:
-                small = num
-            elif num <= medium:
-                medium = num
-            else:
-                return True
-        return False
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        def build(s):
+            ans = []
+            for c in s:
+                if c != '#':
+                    ans.append(c)
+                elif ans:
+                    ans.pop()
+            return "".join(ans)
+        return build(s) == build(t)
+            
+            
