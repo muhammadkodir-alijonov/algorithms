@@ -1,11 +1,19 @@
-#flowerbed = [1,0,0,0,1], n = 1
-from typing import List
-
 class Solution:
-    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
-        count = 0
-        for i in range(len(flowerbed)):
-            if flowerbed[i] == 0 and (i == 0 or flowerbed[i-1] == 0) and (i == len(flowerbed)-1 or flowerbed[i+1] == 0):
-                flowerbed[i] = 1
-                count +=1
-            return count>=n
+    def isAnagram(self, s: str, t: str) -> bool:
+        #solve with dic
+        dic = {}
+        for i in s:
+            if i in dic:
+                dic[i] += 1
+            else:
+                dic[i] = 1
+        for i in t:
+            if i in dic:
+                dic[i] -= 1
+                if dic[i] == 0:
+                    del dic[i]
+            else:
+                return False
+        return not dic
+
+print(Solution().isAnagram("anagram", "nagaram")) # True
