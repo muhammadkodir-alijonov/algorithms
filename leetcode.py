@@ -1,31 +1,15 @@
 from typing import List
 
 class Solution:
-    def compress(self, chars: List[str]) -> int:
-        n = len(chars)
-        if n == 1:
-            return 1
-
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
         i = 0
-        j = 0
-
-        while i < n:
-            count = 1
-            while i + 1 < n  and chars[i] == chars[i+1]:
-                count += 1
+        for j in range(len(nums)):
+            if nums[j] != 0:
+                nums[i], nums[j] = nums[j], nums[i]
                 i += 1
-
-            chars[j] = chars[i]
-            j += 1
-
-            if count > 1:
-                for c in str(count):
-                    chars[j] = c
-                    j += 1
-
-            i += 1
-
-        return j
+        return nums
     
-    
-print(Solution().compress(["a","a","b","b","c","c","c"])) # 6
+print(Solution().moveZeroes([0,1,0,3,12]))
