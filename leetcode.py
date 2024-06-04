@@ -1,15 +1,9 @@
-from typing import List
-
-class Solution:
-    def moveZeroes(self, nums: List[int]) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
-        i = 0
-        for j in range(len(nums)):
-            if nums[j] != 0:
-                nums[i], nums[j] = nums[j], nums[i]
-                i += 1
-        return nums
-    
-print(Solution().moveZeroes([0,1,0,3,12]))
+def isSubsequence(s: str, t: str) -> bool:
+    t_index = 0
+    for char in s:
+        while t_index < len(t) and t[t_index] != char:
+            t_index += 1
+        if t_index == len(t):
+            return False
+        t_index += 1
+    return True
