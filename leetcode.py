@@ -1,9 +1,11 @@
-def isSubsequence(s: str, t: str) -> bool:
-    t_index = 0
-    for char in s:
-        while t_index < len(t) and t[t_index] != char:
-            t_index += 1
-        if t_index == len(t):
-            return False
-        t_index += 1
-    return True
+number = int(input("Raqam kiriting=>"))
+reversedNumber = 0
+
+if number < 0:
+    print("Kiritilgan son 0 dan kichik")
+
+while number != 0:
+    reversedNumber = reversedNumber*10 + number%10
+    number //=10
+
+print(reversedNumber)
