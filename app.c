@@ -1,26 +1,42 @@
 #include <stdio.h>
 
-void findLargestSumPair(int a, int b, int c)
+// Funksiya: Uchta sondan eng kichigi va eng kattasini topish
+void findMinMax(int a, int b, int c)
 {
-    // Uchta sonning har xil kombinatsiyalarini solishtiramiz
-    int sum1 = a + b;
-    int sum2 = a + c;
-    int sum3 = b + c;
+    int min, max;
 
-    // Eng katta yig'indini aniqlash
-    if (sum1 >= sum2 && sum1 >= sum3)
+    // Eng kichik sonni topish
+    if (a <= b && a <= c)
     {
-        printf("Eng katta yig'indi: %d va %d\n", a, b);
+        min = a;
     }
-    else if (sum2 >= sum1 && sum2 >= sum3)
+    else if (b <= a && b <= c)
     {
-        printf("Eng katta yig'indi: %d va %d\n", a, c);
+        min = b;
     }
     else
     {
-        printf("Eng katta yig'indi: %d va %d\n", b, c);
+        min = c;
     }
+
+    // Eng katta sonni topish
+    if (a >= b && a >= c)
+    {
+        max = a;
+    }
+    else if (b >= a && b >= c)
+    {
+        max = b;
+    }
+    else
+    {
+        max = c;
+    }
+
+    printf("Eng kichik son: %d\n", min);
+    printf("Eng katta son: %d\n", max);
 }
+
 int main()
 {
     int a, b, c;
@@ -29,8 +45,8 @@ int main()
     printf("Uchta son kiriting (bo'sh joy bilan ajratilgan): ");
     scanf("%d %d %d", &a, &b, &c);
 
-    // Eng katta yig'indini beruvchi ikkita sonni topamiz
-    findLargestSumPair(a, b, c);
+    // Eng kichik va eng katta sonni topamiz
+    findMinMax(a, b, c);
 
     return 0;
 }
