@@ -1,12 +1,29 @@
+import random
 
+class RandomizedSet:
 
-def shoh_yurish(x1, y1, x2, y2):
-    return abs(x2 - x1) <= 1 and abs(y2 - y1) <= 1
+    def __init__(self):
+        self.lst = []
+        self.map = {}
 
-x1 = int(input("x1 kordinatani kiriting: "))
-y2 = int(input("y1 kordinatani kiriting: "))
-x2 = int(input("x2 kordinatani kiriting: "))
-y1 = int(input("y2 koxlrdinatani kiriting: "))
-# Natijani tekshirish
-print(shoh_yurish(x1, y1, x2, y2))
-    
+    def insert(self, val: int) -> bool:
+        if val in self.map:
+            return False
+
+        self.lst.append(val)
+        self.map[val] = len(self.lst) - 1
+        return True
+
+    def remove(self, val: int) -> bool:
+        if not val in self.map:
+            return False
+
+        val_idx = self.map[val]
+        self.lst[val_idx] = self.lst[-1]
+        self.map[self.lst[-1]] = val_idx
+        self.lst.pop()
+        del self.map[val]
+        return True
+
+    def getRandom(self) -> int:
+        return random.choice(self.lst)
