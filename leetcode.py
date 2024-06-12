@@ -1,25 +1,25 @@
+from typing import List
+
+
+# Input nums = [0,1,1,1,0,1,1,0,1]
+# Output: 5
+
 class Solution:
-    def maxVowels(s: str, k: int) -> int:
-        vowels = set("aeiou")  # Unli harflarni to'plamga aylantiramiz
-        n = len(s)
-        count_vowels = 0
+    def longestSubarray(nums: List[int]) -> int:
+        left = 0
+        right = 0
+        max_len = 0
+        num_zeros = 0
+        while right < len(nums):
+            if nums[right] == 0:
+                num_zeros += 1
 
-        # Dastlabki k uzunlikdagi substringdagi unli harflarni sanaymiz
-        for i in range(k):
-            if s[i] in vowels:
-                count_vowels += 1
-
-        max_vowels = count_vowels
-
-        # Slayd qiluvchi oyna usulini qo'llaymiz
-        for i in range(k, n):
-            if s[i - k] in vowels:
-                count_vowels -= 1
-            if s[i] in vowels:
-                count_vowels += 1
-            max_vowels = max(max_vowels, count_vowels)
-
-        return max_vowels
+            while num_zeros > 1:
+                if nums[left] == 0:
+                    num_zeros -= 1
+                left += 1
+            max_len = max(max_len, right - left)
+            right += 1
+        return max_len
     
-
-print(Solution.maxVowels("abciiidef",3))
+print(Solution.longestSubarray([0,1,1,1,0,1,1,0,1]))
