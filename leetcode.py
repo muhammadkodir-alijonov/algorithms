@@ -1,15 +1,10 @@
-class Solution:
-    def halvesAreAlike(self, s: str) -> bool:
-        i = 0
-        j = len(s) - 1
-        mid = 0
-        vowels = set('aeiouAEIOU')
-        while i < j:
-            if s[i] in vowels:
-                mid += 1
-            if s[j] in vowels:
-                mid -= 1
-            i += 1
-            j -= 1
+from typing import List
 
-        return mid == 0
+class Solution:
+    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+        set1 = set(nums1)
+        set2 = set(nums2)
+
+        return [list(set1 - set2), list(set2 - set1)]
+        
+print(Solution().findDifference([4, 9, 5,1], [9, 4, 9, 8, 4])) # [[5], [8, 9]]
