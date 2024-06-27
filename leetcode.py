@@ -1,10 +1,13 @@
-from typing import List
+secret_number = 9
+guess = -1 #taxmin
 
-class Solution:
-    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
-        set1 = set(nums1)
-        set2 = set(nums2)
 
-        return [list(set1 - set2), list(set2 - set1)]
-        
-print(Solution().findDifference([4, 9, 5,1], [9, 4, 9, 8, 4])) # [[5], [8, 9]]
+
+while guess != secret_number:
+    guess = int(input("Maxfiy raqamni toping: "))
+    if guess < secret_number:
+        print("Juda kichik!")
+    elif guess > secret_number:
+        print("Juda katta!")
+    else:
+        print("Tabriklaymiz! Siz to'g'ri topdingiz.")
