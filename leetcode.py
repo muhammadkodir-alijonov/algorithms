@@ -1,22 +1,21 @@
-# Boshlang'ich va oxirgi qiymatlarni belgilaymiz
-start = -10
-end = 13
-
-# Manfiy va musbat sonlarning yig'indisini saqlash uchun o'zgaruvchilar
-sum_negative = 0
-sum_positive = 0
-
-# Joriy qiymatni boshlang'ich qiymatga tenglaymiz
-current = start
-
-# While siklini boshlaymiz
-while current <= end:
-    if current < 0:
-        sum_negative += current
-    elif current > 0:
-        sum_positive += current
-    current += 1
-
-# Natijalarni chop etamiz
-print("Manfiy sonlar yig'indisi:", sum_negative)
-print("Musbat sonlar yig'indisi:", sum_positive)
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode()
+        curr = dummy
+        carry = 0
+        while l1 or l2 or carry:
+            if l1:
+                carry += l1.val
+                l1 = l1.next
+            if l2:
+                carry += l2.val
+                l2 = l2.next
+            curr.next = ListNode(carry % 10)
+            curr = curr.next
+            carry //= 10
+        return dummy.next
