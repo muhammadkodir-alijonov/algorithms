@@ -1,21 +1,18 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+from typing import List
+
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        dummy = ListNode()
-        curr = dummy
-        carry = 0
-        while l1 or l2 or carry:
-            if l1:
-                carry += l1.val
-                l1 = l1.next
-            if l2:
-                carry += l2.val
-                l2 = l2.next
-            curr.next = ListNode(carry % 10)
-            curr = curr.next
-            carry //= 10
-        return dummy.next
+    def minDifference(self, nums: List[int]) -> int:
+        n = len(nums)
+        if n <= 4:
+            return 0
+        nums.sort()
+        
+        case1 = nums[n-4] - nums[0]
+        case2 = nums[n-3] - nums[1]
+        case3 = nums[n-2] - nums[2]
+        case4 = nums[n-1] - nums[3]
+        
+        return min(case4,case3,case2,case1)
+    
+print(Solution().minDifference([1,5,0,10,14])) # 1
+        
