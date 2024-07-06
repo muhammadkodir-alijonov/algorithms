@@ -1,11 +1,13 @@
-class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
-        if not strs:
-            return ""
-        prefix = strs[0]
-        for s in strs[1:]:
-            while s.find(prefix) != 0:
-                prefix = prefix[:-1]
-                if not prefix:
-                    return ""
-        return prefix
+class Solution(object):
+    def maximum69Number (self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        for i in num:
+            if i == 6:
+                num = num.replace(i, 9, 1)
+                break
+        return num
+
+print(Solution.maximum69Number(9969))
