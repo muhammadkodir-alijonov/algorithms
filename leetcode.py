@@ -1,18 +1,17 @@
-from typing import List
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
 
-class Solution:
-    def minOperations(self, logs: List[str]) -> int:
-        stack = []
-        for log in logs:
-            if log == '../':
-                if stack:
-                    stack.pop()
-            elif log != './':
-                stack.append(log)
-        return len(stack)
+def print_primes_up_to(n):
+    print(f"{n} gacha bo'lgan tub sonlar:")
+    for i in range(2, n + 1):
+        if is_prime(i):
+            print(i, end=" ")
 
-<<<<<<< HEAD
-#commit + commit
-=======
-#commit
->>>>>>> c80cde983485ab6507749567b7cfc4e02d2951fb
+# n ni kiriting
+n = int(input("n ni kiriting: "))
+print_primes_up_to(n)
