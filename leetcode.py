@@ -11,4 +11,8 @@ class Solution:
                 stack.append(log)
         return len(stack)
 
+<<<<<<< HEAD
 #commit + commit
+=======
+#commit
+>>>>>>> c80cde983485ab6507749567b7cfc4e02d2951fb
