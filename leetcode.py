@@ -11,4 +11,3 @@ class Solution:
                 stack.append(log)
         return len(stack)
     
-#commit
