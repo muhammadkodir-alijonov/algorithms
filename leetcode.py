@@ -10,3 +10,5 @@ class Solution:
             elif log != './':
                 stack.append(log)
         return len(stack)
+
+print(Solution().minOperations(["d1/","../","../","../"]))  # 0
