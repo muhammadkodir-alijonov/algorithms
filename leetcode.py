@@ -10,4 +10,5 @@ class Solution:
             elif log != './':
                 stack.append(log)
         return len(stack)
-    
+
+#commit
