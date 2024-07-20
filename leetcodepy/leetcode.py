@@ -1,15 +1,5 @@
-#Input: n = 19 True
+from typing import List
 
 class Solution:
-    def isHappy(self, n: int) -> bool:
-        korilgan_sonlar = []
-        while True:
-            digit = n//10
-            korilgan_sonlar.append(digit)
-            summ += digit**2
-            if summ == 1:
-                return True
-            else:
-                continue
-        return False
-            
+    def luckyNumbers (self, matrix: List[List[int]]) -> List[int]:
+        return list({min(row) for row in matrix} & {max(col) for col in zip(*matrix)})
