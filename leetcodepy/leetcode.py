@@ -1,9 +1,12 @@
+from typing import List
+
 class Solution:
-    def removeStars(self, s: str) -> str:
-        stack = []
-        for i in range(len(s)):
-            if s[i] == '*' and stack:
-                stack.pop()
-            else:
-                stack.append(s[i])
-        return "".join(stack)
+    def removeDuplicates(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return 0
+        j = 0
+        for i in range(len(nums)):
+            if nums[i] != nums[j]:
+                j +=1    
+                nums[j] = nums[i]
+        return j
