@@ -1,11 +1,16 @@
 from typing import List
 
 class Solution:
-    def minimumTotal(self, triangle: List[List[int]]) -> int:
-        for i in range(len(triangle) - 2, -1, -1):
-            for j in range(len(triangle[i])):
-                triangle[i][j] += min(triangle[i + 1][j], triangle[i + 1][j + 1])
+    def generate(self, numRows: int) -> List[List[int]]:
+        r_list = []
+        for i in range(0, numRows):
+            row = []
+            for j in range(0, i+1):
+                if j == 0 or j == i:
+                    row.append(1)
+                else:
+                    row.append(r_list[i-1][j-1] + r_list[i-1][j])
+            r_list.append(row)
+        return r_list
 
-        return triangle[0][0]
-
-print(Solution().minimumTotal([[2],[3,4],[6,5,7],[4,1,8,3]]) == 11)
+print(Solution().generate(5))
