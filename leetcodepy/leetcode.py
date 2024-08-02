@@ -1,10 +1,29 @@
-from typing import List
+class MyStack:
 
-class Solution:
-    def countSeniors(self, details: List[str]) -> int:
-        count = 0
-        for i in range(len(details)):
-            age_sum = int(details[i][11])*10 + int(details[i][12])  
-            if age_sum>60:
-                count+=1
-        return count
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.queue = collections.deque()
+    def push(self, x: int) -> None:
+        self.queue.append(x)
+        for _ in range(len(self.queue) - 1):
+            self.queue.append(self.queue.popleft())
+
+    def pop(self) -> int:
+        return self.queue.popleft()
+
+    def top(self) -> int:
+        return self.queue[0]
+
+    def empty(self) -> bool:
+        return not self.queue
+
+
+
+# Your MyStack object will be instantiated and called as such:
+# obj = MyStack()
+# obj.push(x)
+# param_2 = obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.empty()
