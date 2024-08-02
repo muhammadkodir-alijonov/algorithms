@@ -1,9 +1,10 @@
 from typing import List
 
 class Solution:
-    def findPeaks(self, mountain: List[int]) -> List[int]:
-        peaks = []
-        for i in range(1, len(mountain) - 1):
-            if mountain[i] > mountain[i - 1] and mountain[i] > mountain[i + 1]:
-                peaks.append(i)
-        return peaks
+    def countSeniors(self, details: List[str]) -> int:
+        count = 0
+        for i in range(len(details)):
+            age_sum = int(details[i][11])*10 + int(details[i][12])  
+            if age_sum>60:
+                count+=1
+        return count
