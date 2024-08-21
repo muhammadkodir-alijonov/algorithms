@@ -1,19 +1,23 @@
-from typing import List
+from typing import Deque
 
-class Solution:
-    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        res , sol = [], []
-        nums = candidates
-        n = len(candidates)
-        def backtrack(i,cur_sum):
-            if cur_sum == target:
-                res.append(sol[:])
-                return 
-            if cur_sum > target or i == n:
-                return 
-            backtrack(i+1,cur_sum)
-            sol.append(nums[i])
-            backtrack(i,cur_sum+nums[i])
-            sol.pop()
-        backtrack(0,0)
-        return res
+class Treenode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+def is_leaf(node):
+    return not node.left and not node.right
+
+def count_leaves(root:Treenode) -> int:
+    total = 0
+    queue = Deque[root]
+    
+    while queue:
+        curr = queue.pop()
+        if not curr:
+            continue
+        if is_leaf(curr):
+            total += 1
+        queue.append(curr.left)
+        queue.append(curr.right)
+    return total
