@@ -18,6 +18,6 @@ def count_leaves(root:Treenode) -> int:
             continue
         if is_leaf(curr):
             total += 1
-        queue.append(curr.left)
-        queue.append(curr.right)
+        queue.appendleft(curr.left)
+        queue.appendleft(curr.right)
     return total
