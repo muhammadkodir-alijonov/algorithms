@@ -1,21 +1,15 @@
-from collections import deque
+from typing import List
 
-class Treenode:
-    def __init__(self, val):
-        self.val = val
-        self.left = None
-        self.right = None
-
-def is_leaf(node):
-    return not node.left and not node.right
-
-def dfs(root:Treenode) -> int:
-    stack = []
-    curr = root
-    while stack or curr:
-        while curr:
-            stack.append(curr)
-            curr = curr.left
-        curr = stack.pop()
-        print(curr.val)
-        curr = curr.right
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        #use zip
+        n = len(matrix)
+        for i in range(n):
+            for j in range(i, n):
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+        for i in range(n):
+            matrix[i].reverse()
+        return matrix
