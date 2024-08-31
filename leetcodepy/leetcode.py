@@ -1,19 +1,16 @@
 from typing import List
-#nums = [0,1,2,4,5,7]
-#Output: ["0->2","4->5","7"]
+
 class Solution:
-    def summaryRanges(self, nums: List[int]) -> List[str]:
-        i = 0
-        ans = []
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        length = len(nums)
+        ans = [0]*length
         
-        while i < len(nums):
-            start = nums[i]
-            
-            while i < len(nums) - 1 and nums[i] + 1 == nums[i+1]:
-                i+=1
-            if start != nums[i]:
-                ans.append(str(start) + '->' + str(nums[i]))
-            else:
-                ans.append(str(nums[i]))
-            i+=1
+        left_p = 1
+        for i in range(length):
+            ans[i] = left_p
+            left_p *= nums[i]
+        right_p = 1
+        for i in range(length-1,-1,-1):
+            ans[i] *= right_p
+            right_p *= nums[i]
         return ans
