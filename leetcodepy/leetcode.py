@@ -1,16 +1,34 @@
 from typing import List
 
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
-        length = len(nums)
-        ans = [0]*length
-        
-        left_p = 1
-        for i in range(length):
-            ans[i] = left_p
-            left_p *= nums[i]
-        right_p = 1
-        for i in range(length-1,-1,-1):
-            ans[i] *= right_p
-            right_p *= nums[i]
-        return ans
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        if not matrix or not matrix[0]:
+            return []
+
+        num_rows = len(matrix)
+        num_columns = len(matrix[0])
+        res = []
+
+        left, right = 0, num_columns - 1
+        top, bottom = 0, num_rows - 1
+
+        while left <= right and top <= bottom:
+            for j in range(left, right + 1):
+                res.append(matrix[top][j])
+            top += 1
+
+            for i in range(top, bottom + 1):
+                res.append(matrix[i][right])
+            right -= 1
+
+            if top <= bottom:
+                for j in range(right, left - 1, -1):
+                    res.append(matrix[bottom][j])
+                bottom -= 1
+
+            if left <= right:
+                for i in range(bottom, top - 1, -1):
+                    res.append(matrix[i][left])
+                left += 1
+
+        return res
