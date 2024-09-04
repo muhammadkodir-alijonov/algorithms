@@ -1,20 +1,15 @@
 from collections import Counter
 
+#text = "nlaebolko"
 
 class Solution:
-    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        counter = {}
-        for i in magazine:
-            if i in counter:
-                counter[i] +=1
-            else:
-                counter[i] = 1
-                
-        for i in ransomNote:
-            if i not in counter:
-                return False
-            elif counter[i] == 1:
-                del counter[i]
-            else:
-                counter[i] -= 1
-        return True
+    def maxNumberOfBalloons(self, text: str) -> int:
+        balloons_count = {'b': 0, 'a': 0, 'l': 0, 'o': 0, 'n': 0}
+        for i in text:
+            if i in balloons_count:
+                balloons_count[i] +=1
+        balloons_count['l'] //=2
+        balloons_count['o'] //=2
+        
+        min_balloons_count = min(balloons_count.values())
+        return min_balloons_count
