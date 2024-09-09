@@ -1,15 +1,16 @@
-from collections import Counter
-
-#text = "nlaebolko"
+from typing import List
 
 class Solution:
-    def maxNumberOfBalloons(self, text: str) -> int:
-        balloons_count = {'b': 0, 'a': 0, 'l': 0, 'o': 0, 'n': 0}
-        for i in text:
-            if i in balloons_count:
-                balloons_count[i] +=1
-        balloons_count['l'] //=2
-        balloons_count['o'] //=2
+    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+        rows ,cols = len(grid),len(grid[0])
+        max_area = 0
         
-        min_balloons_count = min(balloons_count.values())
-        return min_balloons_count
+        def dfs(r,c):
+            if(min(r,c) < 0 or r == rows or c == cols or grid[r][c] == 0):
+                return 0
+            grid[r][c] = 0
+            return (1 + dfs(r+1,c)+dfs(r-1,c)+dfs(r,c+1) + dfs(r,c-1))
+        for r in range(rows):
+            for c in range(cols):
+                max_area = max(max_area,dfs(r,c))
+        return max_area
