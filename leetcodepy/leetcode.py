@@ -1,36 +1,36 @@
-from typing import List
+from typing import Optional
+import math
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 class Solution:
-    def generateMatrix(self, n: int) -> List[List[int]]:
-        #simple solution
-        matrix = [[0] * n for _ in range(n)]
-        row_start, row_end = 0, n - 1
-        col_start, col_end = 0, n - 1
-        num = 1
+    def insertGreatestCommonDivisors(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        curr = head
 
-        while row_start <= row_end and col_start <= col_end:
-            for i in range(col_start, col_end + 1):
-                matrix[row_start][i] = num
-                num += 1
-            row_start += 1
+        # Traverse the linked list
+        while curr and curr.next:
+            # Find the GCD of the current node and the next node
+            # 18 24 36
+            gcd_value = self.ekub(curr.val, curr.next.val)
 
-            for i in range(row_start, row_end + 1):
-                matrix[i][col_end] = num
-                num += 1
-            col_end -= 1
+            # Create a new node with the GCD value
+            new_node = ListNode(gcd_value)
 
-            if row_start <= row_end:
-                for i in range(col_end, col_start - 1, -1):
-                    matrix[row_end][i] = num
-                    num += 1
-                row_end -= 1
+            # Insert the new node between curr and curr.next
+            new_node.next = curr.next
+            curr.next = new_node
 
-            if col_start <= col_end:
-                for i in range(row_end, row_start - 1, -1):
-                    matrix[i][col_start] = num
-                    num += 1
-                col_start += 1
+            # Move to the next pair (skip over the newly inserted node)
+            curr = new_node.next
 
-        return matrix
-#time complexity is O(n^2) and space complexity is O(n^2)
-# Runtime: 32 ms, faster than 61.83% of Python3 online submissions for Spiral Matrix II.
+        return head
+
+    # GCD function (Euclidean algorithm)
+    def ekub(self, a: int, b: int) -> int:
+        if b == 0:
+            return a
+        else:
+            return self.ekub(b, a % b)
