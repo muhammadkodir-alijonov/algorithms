@@ -1,36 +1,22 @@
-from typing import Optional
-import math
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from typing import List
 
 class Solution:
-    def insertGreatestCommonDivisors(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        curr = head
+    def countConsistentStrings(self, allowed: str, words: List[str]) -> int:
+        counter = {}
 
-        # Traverse the linked list
-        while curr and curr.next:
-            # Find the GCD of the current node and the next node
-            # 18 24 36
-            gcd_value = self.ekub(curr.val, curr.next.val)
+        for letter in allowed:
+            if letter not in counter:
+                counter[letter] = 0
+            counter[letter] += 1
 
-            # Create a new node with the GCD value
-            new_node = ListNode(gcd_value)
+        res = 0
+        for word in words:
+            is_consistent = True
+            for char in word:
+                if char not in counter:
+                    is_consistent = False
+                    break
+            if is_consistent:
+                res += 1
 
-            # Insert the new node between curr and curr.next
-            new_node.next = curr.next
-            curr.next = new_node
-
-            # Move to the next pair (skip over the newly inserted node)
-            curr = new_node.next
-
-        return head
-
-    # GCD function (Euclidean algorithm)
-    def ekub(self, a: int, b: int) -> int:
-        if b == 0:
-            return a
-        else:
-            return self.ekub(b, a % b)
+        return res
