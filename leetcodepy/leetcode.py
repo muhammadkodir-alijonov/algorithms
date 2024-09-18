@@ -1,22 +1,14 @@
-class Solution(object):
-    def threeSum(self, nums):
-        nums.sort()
-        res = []
-        for i in range(len(nums)-2):
-            if i>0 and nums[i]==nums[i-1]:
-                continue
-            l, r = i+1, len(nums)-1
-            while l < r:
-                s = nums[i] + nums[l] + nums[r]
-                if s < 0:
-                    l +=1
-                elif s > 0:
-                    r +=1
-                else:
-                    res.append([nums[i], nums[l], nums[r]])
-                    while l < r and nums[l] == nums[l+1]:
-                        l += 1
-                    while l < r and nums[r] == nums[r-1]:
-                        r -= 1
-                    l += 1; r -= 1
-        return res
+from typing import List
+
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        max_area = 0
+        left = 0
+        right = len(height) - 1
+        while left < right:
+            max_area = max(max_area, min(height[left], height[right]) * (right - left))
+            if height[left] < height[right]:
+                left += 1
+            else:
+                right -= 1
+        return max_area
