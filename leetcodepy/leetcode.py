@@ -1,28 +1,12 @@
-class MinStack:
+from typing import List
 
-    def __init__(self):
-        self.stack = []
-        self.min_stack = []
-
-    def push(self, val: int) -> None:
-        self.stack.append(val)
-        if not self.min_stack or val <= self.min_stack[-1]:
-            self.min_stack.append(val)
-
-    def pop(self) -> None:
-        if self.stack.pop() == self.min_stack[-1]:
-            self.min_stack.pop()
-
-    def top(self) -> int:
-        return self.stack[-1]
-
-    def getMin(self) -> int:
-        return self.min_stack[-1]
-
-
-# Your MinStack object will be instantiated and called as such:
-# obj = MinStack()
-# obj.push(val)
-# obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.getMin()
+class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        stack = []
+        res = [0] * len(temperatures)
+        for i, t in enumerate(temperatures):
+            while stack and t > temperatures[stack[-1]]:
+                cur = stack.pop()
+                res[cur] = i - cur
+            stack.append(i)
+        return res
