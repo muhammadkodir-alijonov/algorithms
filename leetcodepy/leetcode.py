@@ -1,31 +1,20 @@
-from typing import Optional
+from typing import List
 
-class ListNode:
-    def __init__(self, x, next=None):
-        self.val = x
-        self.next = next
+class Solution:
+    def setZeroes(self, matrix: List[List[int]]) -> None:
+        row, col = len(matrix), len(matrix[0])
+        rows_to_zero = set()
+        cols_to_zero = set()
 
-def removeNthFromEnd(head: ListNode, n: int) -> ListNode:
-    # Dummy node to simplify edge cases (e.g., removing the first node)
-    dummy = ListNode(0)
-    dummy.next = head
+        # First pass to find all rows and columns that need to be zeroed
+        for i in range(row):
+            for j in range(col):
+                if matrix[i][j] == 0:
+                    rows_to_zero.add(i)
+                    cols_to_zero.add(j)
 
-    fast = dummy
-    slow = dummy
-
-    # 1. Fast pointerni oldinga n qadam yuritamiz
-    for _ in range(n):
-        fast = fast.next
-
-    # 2. Ikkala pointerni oxirigacha bir vaqtda yuritamiz
-    while fast.next:
-        fast = fast.next
-        slow = slow.next
-
-    # 3. Sekin pointerni olib tashlash kerak bo'lgan elementga yetkazamiz
-    slow.next = slow.next.next
-
-    # 4. Ro'yxatning yangi boshini qaytarish
-    return dummy.next
-
-            
+        # Second pass to set the rows and columns to zero
+        for i in range(row):
+            for j in range(col):
+                if i in rows_to_zero or j in cols_to_zero:
+                    matrix[i][j] = 0
