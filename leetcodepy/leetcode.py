@@ -3,6 +3,7 @@ from typing import List
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
         row, col = len(matrix), len(matrix[0])
+        # using set is removing duplication zero 
         rows_to_zero = set()
         cols_to_zero = set()
 
