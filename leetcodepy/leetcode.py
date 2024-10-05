@@ -1,12 +1,15 @@
 from typing import List
-from collections import defaultdict
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        res = defaultdict(list)
-        for s in strs:
-            count = [0]*26
-            for c in s:
-                count[ord(c)-ord("a")] +=1
-            res[tuple(count)].append(s)
-        return res.values()
+    def rotate(self, nums: List[int], k: int) -> None:
+        n = len(nums)
+        k = k % n
+        self.reverse(nums, 0, n - 1)
+        self.reverse(nums, 0, k - 1)
+        self.reverse(nums, k, n - 1)
+
+    def reverse(self, nums: List[int], l: int, r: int):
+        while l < r:
+            nums[l], nums[r] = nums[r], nums[l]
+            l += 1
+            r -= 1
