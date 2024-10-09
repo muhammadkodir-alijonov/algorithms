@@ -1,15 +1,16 @@
 class Solution:
     def minAddToMakeValid(self, s: str) -> int:
-        ochiq = 0  # Yopilmagan ochiq qavslar soni
-        qoshimcha = 0  # Qo'shish kerak bo'lgan qavslar soni
+        stack = []  # Stack ochiq qavslar uchun
+        count = 0  # Qo'shimcha qavslar soni
+
         for qavs in s:
             if qavs == '(':
-                ochiq += 1  # Yopilishini kutayotgan ochiq qavslar soni oshadi
-            else:
-                if ochiq > 0:
-                    ochiq -= 1  # Yopilayotgan ochiq qavs
+                stack.append(qavs)  # Ochiq qavsni stackga qo'shamiz
+            else:  # Agar yopiq qavs bo'lsa
+                if stack:
+                    stack.pop()  # Ochiq qavsni yopamiz (stackdan olib tashlaymiz)
                 else:
-                    qoshimcha += 1  # Noto'g'ri yopiq qavs bo'lsa, ochiq qavs qo'shish kerak bo'ladi
-        return qoshimcha + ochiq  # Yopilmagan ochiq qavslar sonini qo'shamiz
-
-print(Solution().minAddToMakeValid("((())"))
+                    count += 1  # Noto'g'ri yopiq qavs, ochiq qavs kerak bo'lad
+        return count + len(stack)
+    
+print(Solution().minAddToMakeValid("())"))  # 1
