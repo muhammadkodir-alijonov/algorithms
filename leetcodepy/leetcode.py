@@ -5,15 +5,19 @@ class Solution:
         n = len(nums)
         if n == 1:
             return 0
-        dp = [0] * n
-        for i in range(n):
-            if i + nums[i] >= n - 1:
-                return dp[i] + 1
-            for j in range(i + 1, i + nums[i] + 1):
-                if dp[j] == 0:
-                    dp[j] = dp[i] + 1
-                else:
-                    dp[j] = min(dp[j], dp[i] + 1)
-        return dp[n - 1]
-    
-print(Solution().jump([2,3,1,1,4]))  # 2
+
+        jumps = 0
+        farthest = 0
+        currentJumpEnd = 0
+
+        for i in range(n - 1):
+            # Eng uzoq erishish mumkin bo'lgan indeksni yangilab boramiz
+            farthest = max(farthest, i + nums[i])
+
+            # Agar hozirgi sakrash oxiriga yetgan bo'lsa
+            if i == currentJumpEnd:
+                jumps += 1
+                currentJumpEnd = farthest
+
+        return jumps
+print(Solution().jump([2,3,1,1,4])) # 2
