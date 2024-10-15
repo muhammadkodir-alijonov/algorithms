@@ -1,19 +1,14 @@
 from typing import List
 
 class Solution:
-    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+    def rob(self, nums: List[int]) -> int:
         if not nums:
             return 0
-        left = 0
-        right = 0
-        sum = 0
-        min_len = float("inf")
-        while right < len(nums):
-            sum += nums[right]
-            while sum >= target:
-                min_len = min(min_len, right - left + 1)
-                sum -= nums[left]
-                left += 1
-            right += 1
-        return min_len if min_len != float("inf") else 0
-                
+        if len(nums) == 1:
+            return nums[0]
+        if len(nums) == 2:
+            return max(nums)
+        return max(self.rob(nums[1:]), self.rob(nums[:-1]))
+
+print(Solution().rob([2,7,9,2,1])) 
+
