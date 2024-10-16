@@ -1,21 +1,17 @@
-class Solution(object):
-    def checkPerfectNumber(self, num):
-        """
-        :type num: int
-        :rtype: bool
-        """
-        if num <= 1:
-            return False
-        count = 1
-        sqrt_num = int(num**0.5)
-        for i in range(2, sqrt_num+1):
-            if num%i == 0:
-                count+=i
-                if i != num//i:
-                    count+=num//i
-        return count == num
+class Solution:
+    def countPrimes(self, n: int) -> int:
+        if n <= 2:
+            return 0
 
+        # 1. Prime boolean ro'yxatini yaratamiz
+        is_prime = [True] * n
+        is_prime[0] = is_prime[1] = False  # 0 va 1 tub son emas
 
-num = 28
-solution = Solution()
-print(solution.checkPerfectNumber(num))
+        # 2. 2 dan boshlab, barcha ko'paytmalarini belgilash
+        for i in range(2, int(n ** 0.5) + 1):
+            if is_prime[i]:
+                for j in range(i * i, n, i):
+                    is_prime[j] = False
+
+        # 3. True bo'lganlarni sanaymiz (tub sonlar)
+        return sum(is_prime)
