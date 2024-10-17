@@ -1,17 +1,14 @@
-class Solution:
-    def countPrimes(self, n: int) -> int:
-        if n <= 2:
-            return 0
+class Solution(object):
+    def isUgly(self, n):
+        if n <= 0:
+            return False
+        while (n % 2 == 0):
+            n /= 2
+        while (n % 3 == 0):
+            n /= 3
+        while (n % 5 == 0):
+            n /= 5
+            
+        return n == 1
 
-        # 1. Prime boolean ro'yxatini yaratamiz
-        is_prime = [True] * n
-        is_prime[0] = is_prime[1] = False  # 0 va 1 tub son emas
-
-        # 2. 2 dan boshlab, barcha ko'paytmalarini belgilash
-        for i in range(2, int(n ** 0.5) + 1):
-            if is_prime[i]:
-                for j in range(i * i, n, i):
-                    is_prime[j] = False
-
-        # 3. True bo'lganlarni sanaymiz (tub sonlar)
-        return sum(is_prime)
+print(Solution().isUgly(64))  # True
