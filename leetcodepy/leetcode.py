@@ -4,6 +4,7 @@ class Solution:
             return False
         count = 1
         my_sqrt = int(num**0.5)
+        
         for i in range(2,my_sqrt+1):
             if num%i == 0:
                 count += i
