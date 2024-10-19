@@ -1,17 +1,14 @@
 class Solution:
-    def maximumSwap(self, num: int) -> int:
-        str_num = list(str(num))
-        n = len(str_num)
-        max_idx = n - 1
-        x, y = -1, -1
-
-        for i in range(n - 1, -1, -1):
-            if str_num[i] > str_num[max_idx]:
-                max_idx = i
-            elif str_num[i] < str_num[max_idx]:
-                x, y = i, max_idx
-
-        if x != -1:
-            str_num[x], str_num[y] = str_num[y], str_num[x]
-
-        return int(''.join(str_num))
+    def checkPerfectNumber(self, num: int) -> bool:
+        if num<=1:
+            return False
+        count = 1
+        my_sqrt = int(num**0.5)
+        for i in range(2,my_sqrt+1):
+            if num%i == 0:
+                count += i
+                if i != num//i:
+                    count += num//i
+        return count == num
+    
+print(Solution().checkPerfectNumber(28)) # True
