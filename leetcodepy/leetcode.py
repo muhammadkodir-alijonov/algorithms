@@ -1,8 +1,13 @@
-def sortSentence(s):
-    words = s.split(" ")
-    sorted_words = sorted(words, key=lambda word: int(word[-1]))
-    result = [word[:-1] for word in sorted_words]
-    return " ".join(result)
-
-s = "is2 sentence4 This1 a3"
-print(sortSentence(s))
+class Solution:
+    def isSumEqual(self, firstWord: str, secondWord: str, targetWord: str) -> bool:
+        1 = int(self.convertToOrd(firstWord))
+        2 = int(self.convertToOrd(secondWord))
+        3 = int(self.convertToOrd(targetWord))
+        return 1 + 2 == 3
+        
+        
+    def convertToOrd(self,string: str) -> str:
+        new_str = ""
+        for i in string:
+            new_str += str(ord(i)-97)
+        return new_str
