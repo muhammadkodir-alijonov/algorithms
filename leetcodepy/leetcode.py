@@ -25,3 +25,30 @@ class Solution:
             else:
                 break
         return h_index
+
+
+from typing import List
+
+class Solution:
+    def largestCombination(self, candidates: List[int]) -> int:
+        # Faqat bitta palindrom son qoldirib yangilangan ro'yxat yaratamiz
+        unique_palindroms = [1] * 32
+        for candidate in candidates:
+            for i in range(32):
+                if candidate & (1 << i):
+                    bit_count[i] += 1
+        return max(bit_count)
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
