@@ -41,9 +41,30 @@ class Solution:
 
 
 
+from typing import List
+
+class Solution:
+    def getMaximumXor(self, nums: List[int], maximumBit: int) -> List[int]:
+        res = []
+        total_xor = 0
+        n = len(nums)
+        for i in range(n):
+            total_xor ^= nums[i]
+        max_k = (1<<maximumBit)-1
+        for i in range(n-1,-1,-1):
+            res.append(total_xor^max_k)
+            max_k ^= nums[i]
+        return res
 
 
-
+class Solution:
+    def getMaximumXor(self, nums: List[int], maximumBit: int) -> List[int]:
+        ans = []
+        mask = (1<<maximumBit) - 1
+        for i in range(len(nums)):
+            mask = mask ^ nums[i]
+            ans.append(mask)
+        return ans[::-1]
 
 
 
