@@ -68,6 +68,36 @@ class Solution:
 
 
 
+from typing import List
+
+class Solution:
+    def maximumBeauty(items: List[List[int]], queries: List[int]) -> List[int]:
+        items.sort()
+        
+        max_beauty = 0
+        for i in range(len(items)):
+            max_beauty = max(max_beauty, items[i][1]) 
+            items[i][1] = max_beauty
+
+        ans = []
+        
+        for q in queries:
+            left, right = 0, len(items) - 1
+            best_beauty = 0
+            while left <= right:
+                mid = (left + right) // 2
+                if items[mid][0] <= q:
+                    best_beauty = items[mid][1] 
+                    left = mid + 1 
+                else:
+                    right = mid - 1 
+            ans.append(best_beauty)
+        
+        return ans
+
+print(Solution.maximumBeauty([[1,2],[3,2],[2,4],[5,6],[3,5]],[1,2,3,4,5,6]))
+
+
 
 
 
