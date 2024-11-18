@@ -99,6 +99,28 @@ print(Solution.maximumBeauty([[1,2],[3,2],[2,4],[5,6],[3,5]],[1,2,3,4,5,6]))
 
 
 
+from typing import List
+
+class Solution:
+    def decrypt(code: List[int], k: int) -> List[int]:
+        if k>0:
+            final = code + code[:k]
+            for i in range(len(code)):
+                code[i] = sum(final[i+1,k+1+i])
+            return code
+        if k==0:
+            new=[0]*len(code)
+            return new
+        else:
+            final = code[k:] + code
+            for i in range(len(code)):
+                code[i] = sum(final[i:i-k])
+            return code
+        
+print(Solution.decrypt([5,7,1,4],3))
+
+
+
 
 
 
