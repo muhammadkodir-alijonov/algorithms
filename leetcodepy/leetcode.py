@@ -123,5 +123,44 @@ print(Solution.decrypt([5,7,1,4],3))
 
 
 
+from typing import List
+from collections import Counter
+
+class Solution:
+    def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        # Dastlabki oyna
+        window_map = Counter(nums[:k])
+        window_sum = sum(nums[:k])
+        max_window_sum = 0  # Default qiymat 0 (agar shart bajarilmasa)
+
+        # Agar birinchi oyna unikal bo'lsa, max_window_sum ni yangilash
+        if len(window_map) == k:
+            max_window_sum = window_sum
+
+        # Slayding oynani yuritish
+        for i in range(len(nums) - k):
+            # Chap tomondan elementni olib tashlash
+            left_element = nums[i]
+            window_map[left_element] -= 1
+            if window_map[left_element] == 0:
+                del window_map[left_element]
+            window_sum -= left_element
+
+            # O'ng tomondan yangi elementni qo'shish
+            right_element = nums[i + k]
+            window_map[right_element] += 1
+            window_sum += right_element
+
+            # Maksimal yig'indini yangilash faqat unikal elementlar uchun
+            if len(window_map) == k:  # Agar oyna unikal elementlardan iborat bo'lsa
+                max_window_sum = max(max_window_sum, window_sum)
+
+        return max_window_sum
+
+
+
+
+
+
 
                 
