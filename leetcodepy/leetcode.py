@@ -196,6 +196,36 @@ class Solution:
 
 
 
+from typing import List
+
+class Solution:
+    def rotateTheBox(self, box: List[List[str]]) -> List[List[str]]:
+
+
+        
+        # 2. Toshlarni pastga tushirish
+        for row in rotated_box:
+            empty_index = len(row) - 1  # Pastki qatordan boshlaymiz
+            for col in range(len(row) - 1, -1, -1):  # Orqadan oldinga yuramiz
+                if row[col] == '*':  # To'siq uchraganda yangi bo'sh joyni belgilaymiz
+                    empty_index = col - 1
+                elif row[col] == '#':  # Toshni pastga tushiramiz
+                    row[col], row[empty_index] = '.', '#'
+                    empty_index -= 1  # Bo'sh joy yuqoriga ko'chadi
+        m = len(box)
+        n = len(box[0])
+        rotated_box = []  # Natijaviy matritsa
+    
+        for i in range(n):  # Har bir ustun uchun (yangi qatorni yaratish)
+            new_row = []  # Yangi qator
+            for j in range(m):  # Har bir qator uchun
+            # Qatorlarni teskari tartibda olib, ustun elementlarini olamiz
+                new_row.append(box[m - 1 - j][i])
+            rotated_box.append(new_row)  # Yaratilgan yangi qatorni matritsaga qo'shamiz
+        return rotated_box
+
+
+
 
 
 
