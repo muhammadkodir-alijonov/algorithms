@@ -224,6 +224,29 @@ class Solution:
             rotated_box.append(new_row)  # Yaratilgan yangi qatorni matritsaga qo'shamiz
         return rotated_box
 
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return None
+        
+        slow = head
+        fast = head
+        prev = None  # Slowdan oldingi tugunni saqlash uchun
+        
+        while fast and fast.next:
+            prev = slow
+            slow = slow.next
+            fast = fast.next.next
+        
+        if prev:
+            prev.next = slow.next
+        
+        return head
 
 
 
