@@ -1,27 +1,24 @@
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from inspect import stack
+from itertools import count
 
-def pairSum(head):
-    # 1. Linked listning uzunligini hisoblash
-    length = 0
-    current = head
-    while current:
-        length += 1
-        current = current.next
 
-    # 2. Tugunlarning qiymatlarini listga saqlash
-    values = []
-    current = head
-    while current:
-        values.append(current.val)
-        current = current.next
+class Solution:
+    def decodeString(self, s: str) -> str:
+        stack = []  # Stack to store previous substrings and counts
+        current_str = ""  # Current decoded string
+        current_num = 0  # To handle the number before `[`
 
-    # 3. Twin sum va max_sum ni topish
-    max_sum = 0
-    for i in range(length // 2):
-        twin_sum = values[i] + values[length - 1 - i]
-        max_sum = max(max_sum, twin_sum)
+        for char in s:
+            if char.isdigit():  # If the character is a digit
+                current_num = current_num * 10 + int(char)  # Build the number
+            elif char == '[':  # If `[` is encountered, push current values onto stack
+                stack.append((current_str, current_num))
+                current_str = ""  # Reset the current string
+                current_num = 0  # Reset the number
+            elif char == ']':  # If `]` is encountered, pop from stack and repeat the string
+                last_str, num = stack.pop()
+                current_str = last_str + current_str * num  # Repeat the current string `num` times
+            else:  # If the character is a letter, add it to the current string
+                current_str += char
 
-    return max_sum
+        return current_str  # Return the final decoded string
