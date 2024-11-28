@@ -1,22 +1,18 @@
+# Definition for singly-linked list.
+from typing import Optional
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 class Solution:
-    def decodeString(s: str) -> str:
-        stack = []  
-        current_str = ""  
-        current_num = 0 
-
-        for char in s:
-            if char.isdigit():
-                current_num = current_num * 10 + int(char)
-            elif char == '[':
-                stack.append((current_str, current_num))
-                current_str = ""  
-                current_num = 0 
-            elif char == ']': 
-                last_str, num = stack.pop()
-                current_str = last_str + current_str * num  
-            else: 
-                current_str += char
-
-        return current_str
-
-print(Solution.decodeString("3[a]2[bc]"))
+    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        pre = head
+        curr = head.next if head else None
+        while curr:
+            pre.val, curr.val = curr.val, pre.val
+            pre = curr.next
+            if not pre:
+                break
+            curr = pre.next
+        return head
