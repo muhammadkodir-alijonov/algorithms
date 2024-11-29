@@ -1,18 +1,8 @@
-# Definition for singly-linked list.
-from typing import Optional
+from typing import List
 
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
 class Solution:
-    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        pre = head
-        curr = head.next if head else None
-        while curr:
-            pre.val, curr.val = curr.val, pre.val
-            pre = curr.next
-            if not pre:
-                break
-            curr = pre.next
-        return head
+    def countBits(self, n: int) -> List[int]:
+        res = [0] * (n + 1)
+        for i in range(1, n + 1):
+            res[i] = res[i >> 1] + (i & 1)
+        return res
