@@ -1,31 +1,30 @@
-from typing import List
+from typing import Optional
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 
 class Solution:
-    def minOperations(self, boxes: str) -> List[int]:
-        n_boxes = list(boxes)
-        ans = []
-        for i, b in enumerate(n_boxes):
-            fw = self.forward(n_boxes, i)
-            bw = self.backward(n_boxes, i)
-            ans.append(fw + bw)
-        return ans
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+        stack = []
+        current = root
+        count = 0
 
-    def forward(self, n_boxes, i):
-        summ = 0
-        for b in range(i + 1, len(n_boxes)):
-            if n_boxes[b] == '1':
-                summ += b - i
-        return summ
+        while stack or current:
+            while current:
+                stack.append(current)
+                current = current.left
 
-    def backward(self, n_boxes, i):
-        summ = 0
-        for b in range(i - 1, -1, -1):
-            if n_boxes[b] == '1':
-                summ += i - b
-        return summ
+            current = stack.pop()
+            count += 1
 
-if __name__ == "__main__":
-    solution = Solution()
-    boxes = "001011"
-    result = solution.minOperations(boxes)
-    print(result)
+            if count == k:
+                return current.val
+
+            current = current.right
+
+        return None
