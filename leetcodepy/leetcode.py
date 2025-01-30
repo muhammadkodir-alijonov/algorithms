@@ -1,30 +1,11 @@
-from typing import Optional
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from typing import List
 
 
 class Solution:
-    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        stack = []
-        current = root
-        count = 0
-
-        while stack or current:
-            while current:
-                stack.append(current)
-                current = current.left
-
-            current = stack.pop()
-            count += 1
-
-            if count == k:
-                return current.val
-
-            current = current.right
-
-        return None
+    def grayCode(self, n: int) -> List[int]:
+        res = []
+        for i in range(1 << n):
+            res.append(i ^ i >> 1)
+        return res
+s = Solution()
+print(s.grayCode(1))
