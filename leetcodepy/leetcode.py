@@ -1,20 +1,10 @@
+import math
 from typing import List
 
-
 class Solution:
-    def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
-        potions.sort()  # Sort potions for binary search
-        result = []
-
-        for spell in spells:
-            left, right = 0, len(potions)
-            while left < right:
-                mid = (left + right) // 2
-                if spell * potions[mid] >= success:
-                    right = mid
-                else:
-                    left = mid + 1
-
-            result.append(len(potions) - left)
-
-        return result
+    def checkPowersOfThree(self, n: int) -> bool:
+        while n > 0:
+            if n % 3 == 2:
+                return False
+            n //= 3
+        return True
